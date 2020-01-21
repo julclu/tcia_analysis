@@ -1,0 +1,144 @@
+{
+  "use_scanning_window": true,
+  "batch_size": 1,
+  "inferer":
+  {
+      "name": "ScanWindowInferer",
+      "args": {
+        "is_channels_first": true
+      }
+  },
+  "model_loader": {
+    "args": {
+      "model_file_path": "{MMAR_CKPT_DIR}/model.trt.pb"
+    },
+    "name": "FrozenGraphModelLoader"
+  },
+  "multi_gpu": false,
+  "pre_transforms":
+  [
+      {
+        "name": "LoadNifty",
+        "args": {
+          "fields": [
+            "image"
+          ]
+        }
+      },
+      {
+        "name": "NormalizeNonzeroIntensities",
+        "args": {
+          "fields": "image"
+        }
+      }
+  ],
+  "post_transforms": [
+    {
+      "name": "ThresholdValues",
+      "args": {
+        "applied_key": "model",
+        "threshold": 0.5
+      }
+    },
+    {
+      "name": "SplitAcrossChannels",
+      "args": {
+        "applied_key": "model",
+        "squeeze": true,
+        "channel_names": [
+          "TC",
+          "WT",
+          "ET"
+        ]
+      }
+    }
+  ],
+  "label_transforms": [
+    {
+      "name": "LoadNifty",
+      "args": {
+        "fields": "label"
+      }
+    },
+    {
+      "name": "BratsConvertLabels",
+      "args": {
+        "fields": [
+          "label"
+        ],
+        "classes": [
+          "TC",
+          "WT",
+          "ET"
+        ]
+      }
+    },
+    {
+      "name": "SplitAcrossChannels",
+      "args": {
+        "applied_key": "label",
+        "channel_names": [
+          "TC_label",
+          "WT_label",
+          "ET_label"
+        ]
+      }
+    }
+  ],
+  "val_metrics": [
+    {
+      "name": "MetricAverageFromArrayDice",
+      "args": {
+        "name": "mean_dice_TC",
+        "applied_key": "TC",
+        "label_key": "TC_label",
+        "report_path": "{MMAR_EVAL_OUTPUT_PATH}"
+
+      }
+    },
+    {
+      "name": "MetricAverageFromArrayDice",
+      "args": {
+        "name": "mean_dice_WT",
+        "applied_key": "WT",
+        "label_key": "WT_label",
+        "report_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      }
+    },
+    {
+      "name": "MetricAverageFromArrayDice",
+      "args": {
+        "name": "mean_dice_ET",
+        "applied_key": "ET",
+        "label_key": "ET_label",
+        "report_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      }
+    }
+  ],
+  "writers": [
+    {
+      "args": {
+        "applied_key": "TC",
+        "dtype": "uint8",
+        "write_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      },
+      "name": "NiftyWriter"
+    },
+    {
+      "args": {
+        "applied_key": "WT",
+        "dtype": "uint8",
+        "write_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      },
+      "name": "NiftyWriter"
+    },
+    {
+      "args": {
+        "applied_key": "ET",
+        "dtype": "uint8",
+        "write_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      },
+      "name": "NiftyWriter"
+    }
+  ]
+}

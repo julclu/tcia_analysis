@@ -1,0 +1,47 @@
+{
+  "version": "1",
+  "type": "segmentation",
+  "labels": [
+    "brain tumor core",
+    "brain whole tumor",
+    "brain enhancing tumor"
+  ],
+  "description": "A pre-trained model for volumetric (3D) segmentation of brain tumors from multimodal MRIs based on BraTS 2018 data",
+  "sw_batch_size": 1,
+  "input_nodes": {
+    "image": "NV_MODEL_INPUT"
+  },
+  "output_nodes": {
+    "model": "NV_MODEL_OUTPUT"
+  },
+  "pre_transforms": [
+    {
+      "name": "VolumeTo4DArray",
+      "args": {
+        "fields": "image"
+      }
+    },
+    {
+      "name": "NormalizeNonzeroIntensities",
+      "args": {
+        "fields": "image"
+      }
+    }
+  ],
+  "post_transforms": [
+    {
+      "name": "ThresholdValues",
+      "args": {
+        "applied_key": "model",
+        "threshold": 0.5
+      }
+    },
+    {
+      "name": "ArgmaxAcrossChannels",
+      "args": {
+        "applied_key": "model",
+        "batch_mode": false
+      }
+    }
+  ]
+}

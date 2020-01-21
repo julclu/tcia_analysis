@@ -1,0 +1,241 @@
+{
+  "epochs": 300,
+  "num_training_epoch_per_valid": 20,
+  "train_summary_recording_interval": 0,
+  "use_scanning_window": false,
+  "multi_gpu": false,
+  "learning_rate": 1e-4,
+  "train": {
+    "loss": {
+      "name": "Dice",
+      "args": {
+        "squared_pred": true,
+        "is_onehot_targets": true
+      }
+    },
+    "metrics": [
+      {
+        "name": "DiceMaskedOutput",
+        "args": {
+          "is_onehot_targets": true,
+          "is_independent_predictions": true,
+          "tags": [
+            "dice",
+            "dice_tc",
+            "dice_wt",
+            "dice_et"
+          ]
+        }
+      }
+    ],
+    "optimizer": {
+      "name": "Adam"
+    },
+    "lr_policy": {
+      "name": "ReduceLRPoly",
+      "args": {
+        "poly_power": 0.9
+      }
+    },
+    "model": {
+      "name": "SegResnet",
+      "args": {
+        "num_classes": 3,
+        "use_vae": false,
+        "blocks_down": "1,2,2,4",
+        "blocks_up": "1,1,1",
+        "init_filters": 16,
+        "use_group_norm": true,
+        "use_group_normG": 8,
+        "reg_weight": 1e-5,
+        "dropout_prob": 0.2,
+        "final_activation": "sigmoid"
+      }
+    },
+    "pre_transforms": [
+      {
+        "name": "LoadNifty",
+        "args": {
+          "fields": [
+            "image",
+            "label"
+          ]
+        }
+      },
+      {
+        "name": "BratsConvertLabels",
+        "args": {
+          "fields": [
+            "label"
+          ],
+          "classes": [
+            "TC",
+            "WT",
+            "ET"
+          ]
+        }
+      },
+      {
+        "name": "CropSubVolumeRandomWithinBounds",
+        "args": {
+          "size": [
+            224,
+            224,
+            128
+          ],
+          "fields": [
+            "image",
+            "label"
+          ]
+        }
+      },
+      {
+        "name": "FlipAxisRandom",
+        "args": {
+          "fields": [
+            "image",
+            "label"
+          ],
+          "axis": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "name": "NormalizeNonzeroIntensities",
+        "args": {
+          "fields": "image"
+        }
+      },
+      {
+        "name": "AugmentIntensityRandomScaleShift",
+        "args": {
+          "fields": "image"
+        }
+      }
+    ],
+    "image_pipeline": {
+      "name": "ImagePipeline",
+      "args": {
+        "task": "segmentation",
+        "data_list_file_path": "{DATASET_JSON}",
+        "data_file_base_dir": "{DATA_ROOT}",
+        "data_list_key": "training",
+        "crop_size": [
+          224,
+          224,
+          128
+        ],
+        "data_format": "channels_first",
+        "num_label_channels": 3,
+        "batch_size": 1,
+        "num_channels": 4,
+        "num_workers": 8,
+        "prefetch_size": 10
+      }
+    }
+  },
+  "validate": {
+    "metrics":
+    [
+        {
+            "name": "MetricAverage",
+            "args": {
+              "name": "mean_dice",
+              "stopping_metric": true,
+              "applied_key": "val_dice"
+            }
+        },
+        {
+            "name": "MetricAverage",
+            "args": {
+              "name": "mean_dice_tc",
+              "applied_key": "val_dice_tc"
+            }
+        },
+        {
+            "name": "MetricAverage",
+            "args": {
+              "name": "mean_dice_wt",
+              "applied_key": "val_dice_wt"
+            }
+        },
+        {
+            "name": "MetricAverage",
+            "args": {
+              "name": "mean_dice_et",
+              "applied_key": "val_dice_et"
+            }
+        }
+
+    ],
+    "image_pipeline": {
+      "name": "ImagePipeline",
+      "args": {
+        "task": "segmentation",
+        "data_list_file_path": "{DATASET_JSON}",
+        "data_file_base_dir": "{DATA_ROOT}",
+        "data_list_key": "validation",
+        "crop_size": [
+          224,
+          224,
+          128
+        ],
+        "data_format": "channels_first",
+        "batch_size": 1,
+        "num_channels": 4,
+        "num_workers": 8,
+        "prefetch_size": 1
+      }
+    },
+    "pre_transforms": [
+      {
+        "name": "LoadNifty",
+        "args": {
+          "fields": [
+            "image",
+            "label"
+          ]
+        }
+      },
+      {
+        "name": "BratsConvertLabels",
+        "args": {
+          "fields": [
+            "label"
+          ],
+          "classes": [
+            "TC",
+            "WT",
+            "ET"
+          ]
+        }
+      },
+      {
+        "name": "CropSubVolumeCenter",
+        "args": {
+          "size": [
+            224,
+            224,
+            128
+          ],
+          "fields": [
+            "image",
+            "label"
+          ]
+        }
+      },
+      {
+        "name": "NormalizeNonzeroIntensities",
+        "args": {
+          "fields": "image"
+        }
+      }
+    ],
+    "inferer": {
+      "name": "SimpleInferer"
+    }
+  }
+}
