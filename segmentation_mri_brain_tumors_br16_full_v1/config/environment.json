@@ -1,7 +1,7 @@
 {
     "DATA_ROOT": "/working/lupolab/julia/tcia_analysis/datasets",
-    "DATASET_JSON": "/working/lupolab/julia/tcia_analysis/segmentation_mri_brain_tumors_br16_full_v1/config/config_datalist_julia.json",
+    "DATASET_JSON": "/working/lupolab/julia/tcia_analysis/segmentation_mri_brain_tumors_br16_full_v1/config/config_datalist_stripped.json",
     "MMAR_CKPT_DIR": "models",
-    "MMAR_EVAL_OUTPUT_PATH": "eval",
+    "MMAR_EVAL_OUTPUT_PATH": "eval_strip",
     "PROCESSING_TASK": "segmentation"
 }
