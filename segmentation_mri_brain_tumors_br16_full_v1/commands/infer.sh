@@ -14,6 +14,6 @@ python3 -u  -m medical.tlt2.src.apps.evaluate \
     -c $CONFIG_FILE \
     -e $ENVIRONMENT_FILE \
     --set \
-    DATASET_JSON=$MMAR_ROOT/config/seg_brats18_datalist_0.json \
+    DATASET_JSON=$MMAR_ROOT/config/config_datalist_julia.json \
     output_infer_result=true \
     do_validation=false
