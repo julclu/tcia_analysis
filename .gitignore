@@ -1,9 +1,15 @@
-*csv
-*json
+*ogfile
+*.bval
+*.bvec
+*eddy_correct_grid_job*
+*.ecclog
 *checkpoint*
 *.x
 *.nii.gz
 *.dcm
+*.int2
+*.idf
+*.ecc*
 *.pb
 *.o2*
 *.e2*

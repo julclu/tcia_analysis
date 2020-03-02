@@ -1,0 +1,344 @@
+#!/bin/tcsh
+#   $URL: https://intrarad.ucsf.edu/svn/rad_software/surbeck/brain/process_DTI_brain/trunk/process_DTI_brain $
+#   $Rev: 33144 $
+#   $Author: qwen@RADIOLOGY.UCSF.EDU $
+#   $Date: 2014-11-05 09:23:33 -0800 (Wed, 05 Nov 2014) $
+
+
+# check number of arguments
+if ( $#argv  < 2 ) then
+   echo
+   echo "--"
+   echo "USAGE: process_DTI_brain dicom_dir rootname [notopup]"
+   echo
+   echo "example: process_DTI_brain E1234/11 t3333"
+   echo
+   echo "Creates new subdirectory e.g. diffusion_b=1000 within the given directory containing"
+   echo "the processed results in idf format. These are named tnum_fa, tnum_adc, tnum_ev1,"
+   echo "tnum_ev2, tnum_ev3, tnum_t2di (all .idf .int2)."
+   echo 
+   echo "**Auto detect if DWI TOPUP sequence is available to do topup correction**"
+   echo "All processing is done with FSL."
+   echo
+   echo "Renamed processed series for brain diffusion scans."
+   echo
+   echo "Last revised 7/29/2014 by Qiuting Wen"
+   echo
+   echo
+   exit
+endif
+
+pwd
+set bvalue = 1000
+
+
+# writing log 
+log_processing -l $PWD -s "$0 $*"
+
+
+
+   # does the file and series exist ?
+   if ( -e diffusion_temp ) then
+	rm -r diffusion_temp
+   endif
+   mkdir ./diffusion_temp
+
+
+
+   # remove the last "/" from dicmo folder name
+   if (`echo $argv[1] | rev | cut -c1` == "/") then
+	set dicom_folder = `echo $argv[1] | rev | cut -c2- | rev`
+
+   else
+        set dicom_folder = $argv[1]
+   endif
+
+   gunzip $1/*.gz
+
+   # convert source DICOM to NIFTI-1
+   dcm2nii -b /netopt/share/lib/local/config/dcm2nii/dcm2nii.ini -o diffusion_temp $dicom_folder
+	
+   set logfile = logfile
+   set bval = `ls -1 ./diffusion_temp/*.bval`
+   set bvec = `ls -1 ./diffusion_temp/*.bvec`
+   set data = `ls -1 ./diffusion_temp/*.nii.gz`
+   mv $bval ./diffusion_temp/data.bval
+   mv $bvec ./diffusion_temp/data.bvec
+   mv $data ./diffusion_temp/data.nii.gz
+   set bvalue = `more ./diffusion_temp/data.bval | rev | cut -d" " -f2 | rev`
+   if ( -e diffusion_b=${bvalue} ) then
+      echo "ERROR: diffusion_b=${bvalue} subdirectory already exists, has data been previously processed?"
+      exit
+   endif   
+   mv diffusion_temp diffusion_b=${bvalue}
+
+
+   # dti processing
+   echo "Processing DTI data b=${bvalue} for examination"
+   cd ./diffusion_b=${bvalue}
+   
+
+	pwd
+
+
+   foreach f (../${dicom_folder}/000000.dcm)
+	if (`dcmdump $f | grep -i "DTI TOPUP"` != '') then
+		echo $f
+		set topup_exam = `echo $f | cut -d"/" -f3`
+		echo topup_exam = $topup_exam
+	endif
+    endif
+
+   #set topup_exam = `exam_info -$argv[2] | grep -i "DTI flip" | cut -d" " -f1`
+   #echo topup_exam = $topup_exam
+   
+   ### check if TOPUP exists, $?topup_exam == 1 then defined. $?topup_exam == 0 then undefined
+   if ($?topup_exam == 0) then	  
+	### no TOPUP, normal processing
+
+	echo "eddy_correct_grid data.nii.gz data_ec.nii.gz 0" >> $logfile
+   	echo run eddy current correction on grid
+   	eddy_correct_grid data.nii.gz data_ec.nii.gz 0 -r
+
+	## if eddy_correct_grid fails, then run regular eddy_correct
+	if (`fslnvols data` != `fslnvols data_ec`) then
+		echo "eddy_correct data.nii.gz data_ec.nii.gz 0" >> $logfile
+   		echo eddy_correct_grid failed, run regular eddy current correction 
+   		eddy_correct data.nii.gz data_ec.nii.gz 0
+	endif
+
+   	echo "bet data_ec.nii.gz data.mask -f 0.1 -m" >> $logfile
+   	bet data_ec.nii.gz data.mask -f 0.1 -m
+   	echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w" >> $logfile
+   	dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w
+if($status != 0) then
+    echo "************************************"
+    echo "ERROR! While executing dtifit:"
+    echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w"
+    echo "************************************"
+    exit(1)
+endif
+
+   else  ### TOPUP + normal processing
+
+	echo "@@@@@@@@@@@@@ Processing TOPUP @@@@@@@@@@"
+	echo @@@@ step1/6: prepare data @@@@
+	mkdir topup
+	dcm2nii -b /netopt/share/lib/local/config/dcm2nii/dcm2nii.ini -o topup ../`echo $argv[1] | cut -d"/" -f1`/$topup_exam
+    	set bval = `ls -1 ./topup/*.bval`
+   	set bvec = `ls -1 ./topup/*.bvec`
+   	set data = `ls -1 ./topup/*.nii.gz`  
+	mv $bval ./topup/data_flip.bval
+   	mv $bvec ./topup/data_flip.bvec
+   	mv $data ./topup/data_flip.nii.gz	
+	cd topup/
+	mv ../data.nii.gz ./
+	
+	fslroi data_flip.nii.gz b0_flip 0 1
+	fslroi data b0_noflip 0 1
+	fslmerge -t b0 b0_flip b0_noflip
+
+	
+	set nslice = `fslval b0 dim3`
+	#### if number of slice is odd, then remove the last slice of b0 so that TOPUP works
+	if (`expr $nslice % 2` == 1) then
+		echo @@@ number of slices is odd, removing the last slice @@
+		@ dim3 = $nslice - 1
+		set dim1 = `fslval b0 dim1`
+		set dim2 = `fslval b0 dim2`
+		fslroi b0 b0 0 $dim1 0 $dim2 0 $dim3 0 2
+	endif
+
+	set txtfname = 'acq_para.txt'
+	set ro_time = 0.05   # readout time, set 0.05 as dummy number, therefore fieldmap is scaled  
+	set PE_dir = `dcmdump ../../{$argv[1]}/*I1.DCM | grep -i inplanephase | cut -d"\" -f1 | cut -d" " -f3 | cut -d"[" -f2 | cut -d"]" -f1`
+
+	if (! -e $txtfname) then
+		if ( ${PE_dir} == 'COL') then
+			echo "0 -1 0 ${ro_time}" >> $txtfname
+			echo "0 1 0 ${ro_time}" >> $txtfname
+		else
+			echo "1 0 0 ${ro_time}" >> $txtfname
+			echo "-1 0 0 ${ro_time}" >> $txtfname	
+		endif		
+	endif
+	##### run topup #####
+	echo @@@@ step2/6: run topup @@@@
+	echo "run topup" >> $logfile
+	echo "/netopt/fsl5/bin/topup --imain=b0.nii.gz --datain=$txtfname --config=/netopt/fsl5/etc/flirtsch/b02b0.cnf --fout=fmap --iout=b0_corrected --out=topup_results" >> $logfile
+	time /netopt/fsl5/bin/topup --imain=b0.nii.gz --datain=$txtfname --config=/netopt/fsl5/etc/flirtsch/b02b0.cnf --fout=fmap --iout=b0_corrected --out=topup_results
+
+
+if($status != 0) then
+    echo "************************************"
+    echo "ERROR While executing TOPUP:"
+    echo "/netopt/fsl5/bin/topup --imain=b0.nii.gz --datain=$txtfname --config=/netopt/fsl5/etc/flirtsch/b02b0.cnf --fout=fmap --iout=b0_corrected --out=topup_results"
+    echo "************************************"
+   
+    echo "*****************************************"
+    echo "Continue NORMAL processing without TOPUP:"
+    echo "*****************************************"   
+    echo "TOPUP failed, continue NORMAL processing without TOPUP:" >> $logfile
+
+    set topup_error = 1
+else
+    set topup_error = 0
+
+endif
+
+    if ($topup_error == 0) then
+	##### run applytopup ####
+	echo @@@@ step3/6: run applytopup @@@@
+	echo "run applytopup" >> $logfile
+	echo "/netopt/fsl5/bin/applytopup --imain=data --inindex=2 --topup=topup_results --out=data_topup --datain=$txtfname --method=jac" >> $logfile
+	time /netopt/fsl5/bin/applytopup --imain=data --inindex=2 --topup=topup_results --out=data_topup --datain=$txtfname --method=jac
+
+if($status != 0) then
+    echo "************************************"
+    echo "ERROR! While executing applyTOPUP:"
+    echo "/netopt/fsl5/bin/applytopup --imain=data --inindex=2 --topup=topup_results --out=data_topup --datain=$txtfname --method=jac"
+    echo "************************************"
+    exit(1)
+endif
+
+	echo @@@@ done TOPUP @@@@
+
+	# rm data.nii.gz  # remove redundent files
+	mv data_topup.nii.gz ../
+	mv data.nii.gz ../
+	cd ../
+	
+	### continue DTI processing
+	echo "eddy_correct_grid data_topup.nii.gz data_topup_ec.nii.gz 0" >> $logfile
+   	echo run eddy current correction on grid
+   	eddy_correct_grid data_topup.nii.gz data_topup_ec.nii.gz 0
+
+	## if eddy_correct_grid fails, then run regular eddy_correct
+	if (`fslnvols data_topup` != `fslnvols data_topup_ec`) then
+		echo "eddy_correct data_topup.nii.gz data_topup_ec.nii.gz 0" >> $logfile
+   		echo eddy_correct_grid failed, run regular eddy current correction 
+   		eddy_correct data_topup.nii.gz data_topup_ec.nii.gz 0
+	endif
+
+
+   	echo "bet data_topup_ec.nii.gz data.mask -f 0.1 -m" >> $logfile
+   	bet data_topup_ec.nii.gz data.mask -f 0.1 -m
+   	echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_topup_ec.nii.gz -o $argv[2]_dti -w" >> $logfile
+   	dtifit -b data.bval -r data.bvec -m data.mask -k data_topup_ec.nii.gz -o $argv[2]_dti -w	
+if($status != 0) then
+    echo "************************************"
+    echo "ERROR! While executing dtifit:"
+    echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_topup_ec.nii.gz -o $argv[2]_dti -w"
+    echo "************************************"
+    exit(1)
+endif
+
+
+	else   ## topup fails, run normal processing
+	mv data.nii.gz ../
+	cd ../
+	rm -r topup
+		
+	echo "eddy_correct_grid data.nii.gz data_ec.nii.gz 0" >> $logfile
+   	echo run eddy current correction on grid
+   	eddy_correct_grid data.nii.gz data_ec.nii.gz 0
+
+	## if eddy_correct_grid fails, then run regular eddy_correct
+	if (`fslnvols data` != `fslnvols data_ec`) then
+		echo "eddy_correct data.nii.gz data_ec.nii.gz 0" >> $logfile
+   		echo run eddy current correction
+   		eddy_correct data.nii.gz data_ec.nii.gz 0
+	endif
+
+   	echo "bet data_ec.nii.gz data.mask -f 0.1 -m" >> $logfile
+   	bet data_ec.nii.gz data.mask -f 0.1 -m
+   	echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w" >> $logfile
+   	dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w
+if($status != 0) then
+    echo "************************************"
+    echo "ERROR! While executing dtifit:"
+    echo "dtifit -b data.bval -r data.bvec -m data.mask -k data_ec.nii.gz -o $argv[2]_dti -w"
+    echo "************************************"
+    exit(1)
+endif
+	endif
+   endif
+
+
+
+
+   	##### converting .nii.gz to .idf ######
+	#### scale up & zero out negative values in FA and MD #########
+	fslmaths $argv[2]_dti_FA.nii.gz -mul 1000 -thr 0 $argv[2]_fa_temp
+	fslmaths $argv[2]_dti_L1.nii.gz -mul 1000000 $argv[2]_ev1_temp
+	fslmaths $argv[2]_dti_L2.nii.gz -mul 1000000 $argv[2]_ev2_temp
+	fslmaths $argv[2]_dti_L3.nii.gz -mul 1000000 $argv[2]_ev3_temp
+	fslmaths $argv[2]_dti_MD.nii.gz -mul 1000000 -thr 0 $argv[2]_adc_temp
+
+	#### swapdim so MRSC_image can show with the right order
+	fslswapdim $argv[2]_fa_temp.nii.gz x -y -z $argv[2]_fa_temp_reorder
+	fslswapdim $argv[2]_ev1_temp.nii.gz x -y -z $argv[2]_ev1_temp_reorder
+	fslswapdim $argv[2]_ev2_temp.nii.gz x -y -z $argv[2]_ev2_temp_reorder
+	fslswapdim $argv[2]_ev3_temp.nii.gz x -y -z $argv[2]_ev3_temp_reorder
+	fslswapdim $argv[2]_adc_temp.nii.gz x -y -z $argv[2]_adc_temp_reorder
+	fslswapdim $argv[2]_dti_S0.nii.gz x -y -z $argv[2]_s0_temp_reorder	
+	fslswapdim data.mask_mask.nii.gz x -y -z $argv[2]_brainmask_temp_reorder
+
+	#### convert to .idf image
+	nifti_file_convert --input $argv[2]_fa_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_fa 
+	nifti_file_convert --input $argv[2]_ev1_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_ev1 
+	nifti_file_convert --input $argv[2]_ev2_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_ev2 
+	nifti_file_convert --input $argv[2]_ev3_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_ev3 
+	nifti_file_convert --input $argv[2]_adc_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_adc 
+	nifti_file_convert --input $argv[2]_s0_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_t2di 
+	nifti_file_convert --input $argv[2]_brainmask_temp_reorder.nii.gz --output_root $argv[2]_${bvalue}_brainmask 
+
+	#### add t-number to series id and series # in .idf
+	svk_file_convert -i $argv[2]_${bvalue}_fa.idf -o $argv[2]_${bvalue}_fa --deid_id $argv[2] -t 3
+	svk_file_convert -i $argv[2]_${bvalue}_ev1.idf -o $argv[2]_${bvalue}_ev1 --deid_id $argv[2] -t 3
+	svk_file_convert -i $argv[2]_${bvalue}_ev2.idf -o $argv[2]_${bvalue}_ev2 --deid_id $argv[2] -t 3
+	svk_file_convert -i $argv[2]_${bvalue}_ev3.idf -o $argv[2]_${bvalue}_ev3 --deid_id $argv[2] -t 3
+	svk_file_convert -i $argv[2]_${bvalue}_adc.idf -o $argv[2]_${bvalue}_adc --deid_id $argv[2] -t 3
+	svk_file_convert -i $argv[2]_${bvalue}_t2di.idf -o $argv[2]_${bvalue}_t2di --deid_id $argv[2] -t 3	
+	svk_file_convert -i $argv[2]_${bvalue}_brainmask.idf -o $argv[2]_${bvalue}_brainmask --deid_id $argv[2] -t 3
+
+	
+
+	#### remove temp files
+	rm *_temp*
+	rm *.nii.gz
+
+
+##### align diffusion anatomical images ####
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo @@@@@ calling align_DTI to align diffusion @@@@@
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+set anat = ''
+if (-e ../images/$argv[2]_fla.idf) then
+	set anat = fla
+else if (-e ../images/$argv[2]_fsea.idf) then
+	set anat = fsea
+else
+	echo %%% WARNING: neither $argv[2]_fla or $argv[2]_fsea exist for alignment! %%%%
+	echo %%% 	  Please check back to align diffusion later!!!              %%%%
+endif
+
+if ($anat != '') then
+	echo "align_DTI $argv[2] $anat" >> $logfile
+	echo "running align_DTI $argv[2] $anat..."
+	align_DTI $argv[2] $anat
+        if($status != 0) then
+	    echo "************************************"
+	    echo "ERROR! While executing:"
+	    echo "align_DTI $argv[2] $anat"
+	    echo "************************************"
+	    exit(1)
+	else
+	    echo "***********************************"
+	    echo "Diffusion has been aligned to $anat"
+	    echo "***********************************"	
+	endif
+endif
+
+
+
