@@ -1,4 +1,9 @@
+*csv
+*json
+*checkpoint*
 *.x
 *.nii.gz
 *.dcm
 *.pb
+*.o2*
+*.e2*
