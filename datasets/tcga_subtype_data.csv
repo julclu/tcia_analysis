@@ -1,0 +1,795 @@
+﻿track_name,IDH-1P10Q Subtype,IDH/codel subtype,MGMT promoter status,Overall Survival (Months),IDH1,IDH1
+TCGA-P5-A5ET,Codel,IDHmut-codel,Methylated,0,,Missense Mutation (putative driver)
+TCGA-QH-A6CU,Codel,IDHmut-codel,Methylated,0,,Missense Mutation (putative driver)
+TCGA-HT-7467,Codel,IDHmut-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-7471,Codel,IDHmut-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-7687,Codel,IDHmut-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-7877,Codel,IDHmut-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-VM-A8CB,Codel,IDHmut-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-A5R9,Codel,IDHmut-codel,Methylated,0.1,,
+TCGA-F6-A8O3,Codel,IDHmut-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-HT-7616,Codel,IDHmut-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-P5-A730,Codel,IDHmut-codel,Methylated,0.2,,
+TCGA-HT-7875,Codel,IDHmut-codel,Methylated,0.3,,Missense Mutation (putative driver)
+TCGA-P5-A72Z,Codel,IDHmut-codel,Methylated,0.3,,Missense Mutation (putative driver)
+TCGA-DU-6400,Codel,IDHmut-codel,Methylated,1.2,,Missense Mutation (putative driver)
+TCGA-HT-8010,Codel,IDHmut-codel,Methylated,1.6,,Missense Mutation (putative driver)
+TCGA-P5-A5EX,Codel,IDHmut-codel,Methylated,1.6,,Missense Mutation (putative driver)
+TCGA-S9-A7J2,Codel,IDHmut-codel,Methylated,2,,Missense Mutation (putative driver)
+TCGA-QH-A6CY,Codel,IDHmut-codel,Methylated,2.2,,Missense Mutation (putative driver)
+TCGA-DU-A6S3,Codel,IDHmut-codel,Methylated,2.7,,Missense Mutation (putative driver)
+TCGA-HT-7881,Codel,IDHmut-codel,Methylated,2.9,,Missense Mutation (putative driver)
+TCGA-HT-7692,Codel,IDHmut-codel,Methylated,3,,Missense Mutation (putative driver)
+TCGA-HT-7607,Codel,IDHmut-codel,Methylated,3.2,,Missense Mutation (putative driver)
+TCGA-QH-A6CZ,Codel,IDHmut-codel,Methylated,3.2,,Missense Mutation (putative driver)
+TCGA-QH-A86X,Codel,IDHmut-codel,Methylated,3.5,,Missense Mutation (putative driver)
+TCGA-HT-8109,Codel,IDHmut-codel,Methylated,3.9,,Missense Mutation (putative driver)
+TCGA-QH-A6X5,Codel,IDHmut-codel,Methylated,3.9,,Missense Mutation (putative driver)
+TCGA-FG-A6J1,Codel,IDHmut-codel,Methylated,4.1,,Missense Mutation (putative driver)
+TCGA-P5-A5F0,Codel,IDHmut-codel,Methylated,4.1,,Missense Mutation (putative driver)
+TCGA-QH-A65Z,Codel,IDHmut-codel,Methylated,4.1,,Missense Mutation (putative driver)
+TCGA-FG-A6IZ,Codel,IDHmut-codel,Methylated,4.2,,Missense Mutation (putative driver)
+TCGA-HW-7495,Codel,IDHmut-codel,Methylated,4.3,,Missense Mutation (putative driver)
+TCGA-HT-7605,Codel,IDHmut-codel,Methylated,4.6,,Missense Mutation (putative driver)
+TCGA-TM-A84S,Codel,IDHmut-codel,Methylated,4.6,,Missense Mutation (putative driver)
+TCGA-QH-A6X8,Codel,IDHmut-codel,Methylated,4.7,,Missense Mutation (putative driver)
+TCGA-QH-A65V,Codel,IDHmut-codel,Methylated,4.8,,Missense Mutation (putative driver)
+TCGA-FG-A713,Codel,IDHmut-codel,Methylated,5.2,,Missense Mutation (putative driver)
+TCGA-KT-A74X,Codel,IDHmut-codel,Methylated,5.2,,Missense Mutation (putative driver)
+TCGA-QH-A65R,Codel,IDHmut-codel,Methylated,5.7,,Missense Mutation (putative driver)
+TCGA-DB-A64Q,Codel,IDHmut-codel,Methylated,6,,Missense Mutation (putative driver)
+TCGA-DU-A6S8,Codel,IDHmut-codel,Methylated,6,,Missense Mutation (putative driver)
+TCGA-S9-A6WP,Codel,IDHmut-codel,Methylated,6.1,,Missense Mutation (putative driver)
+TCGA-HT-8105,Codel,IDHmut-codel,Methylated,6.2,,Missense Mutation (putative driver)
+TCGA-QH-A6X4,Codel,IDHmut-codel,Methylated,6.3,,Missense Mutation (putative driver)
+TCGA-CS-6670,Codel,IDHmut-codel,Methylated,6.6,,Missense Mutation (putative driver)
+TCGA-FG-A60K,Codel,IDHmut-codel,Methylated,6.6,,Missense Mutation (putative driver)
+TCGA-HT-7468,Codel,IDHmut-codel,Methylated,6.7,,Missense Mutation (putative driver)
+TCGA-HT-7694,Codel,IDHmut-codel,Methylated,6.9,,Missense Mutation (putative driver)
+TCGA-DB-A75K,Codel,IDHmut-codel,Methylated,7.4,,Missense Mutation (putative driver)
+TCGA-QH-A65X,Codel,IDHmut-codel,Methylated,7.8,,
+TCGA-CS-6668,Codel,IDHmut-codel,Methylated,8,,Missense Mutation (putative driver)
+TCGA-DH-5144,Codel,IDHmut-codel,Methylated,8,,Missense Mutation (putative driver)
+TCGA-DU-6410,Codel,IDHmut-codel,Methylated,8,,Missense Mutation (putative driver)
+TCGA-S9-A7J3,Codel,IDHmut-codel,Methylated,8.1,,Missense Mutation (putative driver)
+TCGA-S9-A7J1,Codel,IDHmut-codel,Methylated,8.2,,Missense Mutation (putative driver)
+TCGA-DU-A6S2,Codel,IDHmut-codel,Methylated,8.6,,Missense Mutation (putative driver)
+TCGA-S9-A6WN,Codel,IDHmut-codel,Methylated,9,,Missense Mutation (putative driver)
+TCGA-HT-8012,Codel,IDHmut-codel,Methylated,9.4,,Missense Mutation (putative driver)
+TCGA-TM-A84R,Codel,IDHmut-codel,Methylated,9.4,,
+TCGA-CS-5396,Codel,IDHmut-codel,Methylated,10,,Missense Mutation (putative driver)
+TCGA-DH-A7US,Codel,IDHmut-codel,Methylated,10.2,,Missense Mutation (putative driver)
+TCGA-DB-A4XA,Codel,IDHmut-codel,Methylated,10.3,,Missense Mutation (putative driver)
+TCGA-HT-A4DV,Codel,IDHmut-codel,Methylated,10.5,,Missense Mutation (putative driver)
+TCGA-HW-A5KJ,Codel,IDHmut-codel,Methylated,10.5,,Missense Mutation (putative driver)
+TCGA-S9-A6WL,Codel,IDHmut-codel,Methylated,10.9,,Missense Mutation (putative driver)
+TCGA-DB-A64L,Codel,IDHmut-codel,Methylated,11,,Missense Mutation (putative driver)
+TCGA-DB-A4XH,Codel,IDHmut-codel,Methylated,12.6,,Missense Mutation (putative driver)
+TCGA-S9-A7IY,Codel,IDHmut-codel,Methylated,12.6,,Missense Mutation (putative driver)
+TCGA-HT-A615,Codel,IDHmut-codel,Methylated,13,,Missense Mutation (putative driver)
+TCGA-S9-A7QZ,Codel,IDHmut-codel,Methylated,13,,Missense Mutation (putative driver)
+TCGA-HW-7487,Codel,IDHmut-codel,Methylated,13.4,,Missense Mutation (putative driver)
+TCGA-DB-A64W,Codel,IDHmut-codel,Methylated,13.6,,Missense Mutation (putative driver)
+TCGA-DU-8168,Codel,IDHmut-codel,Methylated,14.2,,Missense Mutation (putative driver)
+TCGA-EZ-7264,Codel,IDHmut-codel,Methylated,14.3,,Missense Mutation (putative driver)
+TCGA-HT-7620,Codel,IDHmut-codel,Methylated,14.3,,Missense Mutation (putative driver)
+TCGA-HT-A619,Codel,IDHmut-codel,Methylated,14.3,,Missense Mutation (putative driver)
+TCGA-S9-A7IQ,Codel,IDHmut-codel,Methylated,14.3,,Missense Mutation (putative driver)
+TCGA-HT-7695,Codel,IDHmut-codel,Methylated,14.5,,Missense Mutation (putative driver)
+TCGA-DU-5849,Codel,IDHmut-codel,Methylated,14.6,,
+TCGA-DB-A64V,Codel,IDHmut-codel,Methylated,14.7,,Missense Mutation (putative driver)
+TCGA-DU-5874,Codel,IDHmut-codel,Methylated,15.1,,Missense Mutation (putative driver)
+TCGA-FG-7634,Codel,IDHmut-codel,Methylated,15.3,,Missense Mutation (putative driver)
+TCGA-S9-A6U2,Codel,IDHmut-codel,Methylated,15.6,,Missense Mutation (putative driver)
+TCGA-FG-8186,Codel,IDHmut-codel,Methylated,16,,Missense Mutation (putative driver)
+TCGA-DB-A64R,Codel,IDHmut-codel,Methylated,16.1,,Missense Mutation (putative driver)
+TCGA-HT-7677,Codel,IDHmut-codel,Methylated,16.2,,Missense Mutation (putative driver)
+TCGA-TM-A84M,Codel,IDHmut-codel,Methylated,16.5,,Missense Mutation (putative driver)
+TCGA-DB-A64P,Codel,IDHmut-codel,Methylated,16.8,,Missense Mutation (putative driver)
+TCGA-DH-A66F,Codel,IDHmut-codel,Methylated,17.2,,Missense Mutation (putative driver)
+TCGA-HW-8322,Codel,IDHmut-codel,Methylated,17.8,,Missense Mutation (putative driver)
+TCGA-DU-A7T6,Codel,IDHmut-codel,Methylated,18,,Missense Mutation (putative driver)
+TCGA-S9-A7QY,Codel,IDHmut-codel,Methylated,18.2,,
+TCGA-S9-A6U5,Codel,IDHmut-codel,Methylated,20,,Missense Mutation (putative driver)
+TCGA-FG-8187,Codel,IDHmut-codel,Methylated,20.1,,Missense Mutation (putative driver)
+TCGA-FG-7641,Codel,IDHmut-codel,Methylated,20.6,,Missense Mutation (putative driver)
+TCGA-DU-A76R,Codel,IDHmut-codel,Methylated,21.3,,Missense Mutation (putative driver)
+TCGA-DU-8164,Codel,IDHmut-codel,Methylated,21.4,,Missense Mutation (putative driver)
+TCGA-HT-7608,Codel,IDHmut-codel,Methylated,22,,Missense Mutation (putative driver)
+TCGA-DU-6394,Codel,IDHmut-codel,Methylated,22.4,,Missense Mutation (putative driver)
+TCGA-FG-7638,Codel,IDHmut-codel,Methylated,22.5,,Missense Mutation (putative driver)
+TCGA-S9-A6TY,Codel,IDHmut-codel,Methylated,22.5,,
+TCGA-FG-A710,Codel,IDHmut-codel,Methylated,22.9,,Missense Mutation (putative driver)
+TCGA-S9-A6WH,Codel,IDHmut-codel,Methylated,22.9,,Missense Mutation (putative driver)
+TCGA-VW-A7QS,Codel,IDHmut-codel,Methylated,23.2,,Missense Mutation (putative driver)
+TCGA-TM-A7C5,Codel,IDHmut-codel,Methylated,25.3,,Missense Mutation (putative driver)
+TCGA-VM-A8CE,Codel,IDHmut-codel,Methylated,26.8,,Missense Mutation (putative driver)
+TCGA-VV-A829,Codel,IDHmut-codel,Methylated,27,,Missense Mutation (putative driver)
+TCGA-DB-A64U,Codel,IDHmut-codel,Methylated,27.8,,Missense Mutation (putative driver)
+TCGA-S9-A6TX,Codel,IDHmut-codel,Methylated,28.1,,Missense Mutation (putative driver)
+TCGA-S9-A6TW,Codel,IDHmut-codel,Methylated,28.3,,Missense Mutation (putative driver)
+TCGA-HW-7486,Codel,IDHmut-codel,Methylated,29.9,,Missense Mutation (putative driver)
+TCGA-TM-A84O,Codel,IDHmut-codel,Methylated,29.9,,Missense Mutation (putative driver)
+TCGA-DH-A669,Codel,IDHmut-codel,Methylated,30.2,,Missense Mutation (putative driver)
+TCGA-DU-7018,Codel,IDHmut-codel,Methylated,30.7,,Missense Mutation (putative driver)
+TCGA-DH-5141,Codel,IDHmut-codel,Methylated,31.8,,
+TCGA-R8-A6MO,Codel,IDHmut-codel,Methylated,32.6,,Missense Mutation (putative driver)
+TCGA-FG-5964,Codel,IDHmut-codel,Methylated,34.3,,Missense Mutation (putative driver)
+TCGA-TM-A84G,Codel,IDHmut-codel,Methylated,34.3,,Missense Mutation (putative driver)
+TCGA-HT-7874,Codel,IDHmut-codel,Methylated,37.1,,Missense Mutation (putative driver)
+TCGA-HT-7856,Codel,IDHmut-codel,Methylated,39.1,,
+TCGA-HW-7491,Codel,IDHmut-codel,Unmethylated,40.1,,
+TCGA-IK-8125,Codel,IDHmut-codel,Methylated,42.7,,Missense Mutation (putative driver)
+TCGA-DB-5279,Codel,IDHmut-codel,Methylated,44.5,,Missense Mutation (putative driver)
+TCGA-HT-7681,Codel,IDHmut-codel,Methylated,44.6,,
+TCGA-W9-A837,Codel,IDHmut-codel,Methylated,45,,Missense Mutation (putative driver)
+TCGA-DU-6397,Codel,IDHmut-codel,Methylated,46,,Missense Mutation (putative driver)
+TCGA-FG-5962,Codel,IDHmut-codel,Methylated,47.7,,Missense Mutation (putative driver)
+TCGA-DB-5278,Codel,IDHmut-codel,Methylated,50.1,,Missense Mutation (putative driver)
+TCGA-DU-6393,Codel,IDHmut-codel,Methylated,52.1,,Missense Mutation (putative driver)
+TCGA-DH-A7UR,Codel,IDHmut-codel,Methylated,54.2,,
+TCGA-HT-7481,Codel,IDHmut-codel,Methylated,59.1,,Missense Mutation (putative driver)
+TCGA-R8-A73M,Codel,IDHmut-codel,Methylated,59.3,,Missense Mutation (putative driver)
+TCGA-DU-7302,Codel,IDHmut-codel,Methylated,60.3,,Missense Mutation (putative driver)
+TCGA-DU-7300,Codel,IDHmut-codel,Methylated,62,,Missense Mutation (putative driver)
+TCGA-S9-A6WD,Codel,IDHmut-codel,Methylated,62.3,,Missense Mutation (putative driver)
+TCGA-CS-5390,Codel,IDHmut-codel,Methylated,64.6,,Missense Mutation (putative driver)
+TCGA-S9-A6WE,Codel,IDHmut-codel,Methylated,72.5,,Missense Mutation (putative driver)
+TCGA-DB-A4XG,Codel,IDHmut-codel,Methylated,72.9,,
+TCGA-E1-A7YO,Codel,IDHmut-codel,Methylated,75,,Missense Mutation (putative driver)
+TCGA-HT-7480,Codel,IDHmut-codel,Methylated,75.1,,Missense Mutation (putative driver)
+TCGA-DB-5274,Codel,IDHmut-codel,Methylated,75.2,,Missense Mutation (putative driver)
+TCGA-DU-A6S6,Codel,IDHmut-codel,Methylated,77.9,,Missense Mutation (putative driver)
+TCGA-E1-5318,Codel,IDHmut-codel,Methylated,78.2,,
+TCGA-R8-A6MK,Codel,IDHmut-codel,Methylated,88.8,,Missense Mutation (putative driver)
+TCGA-R8-A6ML,Codel,IDHmut-codel,Methylated,94,,Missense Mutation (putative driver)
+TCGA-DU-7294,Codel,IDHmut-codel,Methylated,94.3,,Missense Mutation (putative driver)
+TCGA-E1-5319,Codel,IDHmut-codel,Methylated,95.5,,Missense Mutation (putative driver)
+TCGA-S9-A6UB,Codel,IDHmut-codel,Methylated,103.7,,Missense Mutation (putative driver)
+TCGA-E1-5311,Codel,IDHmut-codel,Methylated,134.2,,Missense Mutation (putative driver)
+TCGA-DU-7009,Codel,IDHmut-codel,Methylated,138.2,,Missense Mutation (putative driver)
+TCGA-S9-A7R1,Codel,IDHmut-codel,Methylated,164.3,,Missense Mutation (putative driver)
+TCGA-DU-5870,Codel,IDHmut-codel,Methylated,182.2,,Missense Mutation (putative driver)
+TCGA-E1-A7YS,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-HT-A74K,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-HT-A74L,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A77W,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A77X,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A737,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A781,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A83X,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A83Y,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A840,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A847,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RG,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RI,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RN,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RQ,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RS,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RU,Codel,IDHmut-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RO,Codel,IDHmut-codel,Methylated,,,
+TCGA-HT-7472,Non-codel,IDHmut-non-codel,Methylated,0,,Missense Mutation (putative driver)
+TCGA-P5-A5EU,Non-codel,IDHmut-non-codel,Unmethylated,0,,Missense Mutation (putative driver)
+TCGA-QH-A6CW,Non-codel,IDHmut-non-codel,Methylated,0,,Missense Mutation (putative driver)
+TCGA-CS-5394,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-FN-7833,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-7690,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-A5R5,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-A5RB,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-A74O,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-QH-A870,Non-codel,IDHmut-non-codel,Methylated,0.1,,Missense Mutation (putative driver)
+TCGA-HT-8106,Non-codel,IDHmut-non-codel,Methylated,0.1,,
+TCGA-F6-A8O4,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-HT-7676,Non-codel,IDHmut-non-codel,Unmethylated,0.2,,Missense Mutation (putative driver)
+TCGA-HT-8111,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-P5-A5EV,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-P5-A731,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-P5-A733,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-QH-A6XA,Non-codel,IDHmut-non-codel,Methylated,0.2,,Missense Mutation (putative driver)
+TCGA-P5-A72W,Non-codel,IDHmut-non-codel,Unmethylated,0.3,,Missense Mutation (putative driver)
+TCGA-P5-A72X,Non-codel,IDHmut-non-codel,Methylated,0.3,,Missense Mutation (putative driver)
+TCGA-QH-A6X3,Non-codel,IDHmut-non-codel,Methylated,0.6,,Missense Mutation (putative driver)
+TCGA-P5-A5F4,Non-codel,IDHmut-non-codel,Methylated,0.8,,Missense Mutation (putative driver)
+TCGA-HT-A616,Non-codel,IDHmut-non-codel,Methylated,1.8,,Missense Mutation (putative driver)
+TCGA-QH-A6X9,Non-codel,IDHmut-non-codel,Methylated,1.9,,Missense Mutation (putative driver)
+TCGA-P5-A5EZ,Non-codel,IDHmut-non-codel,Methylated,2.3,,Missense Mutation (putative driver)
+TCGA-HT-8108,Non-codel,IDHmut-non-codel,Methylated,2.5,,Missense Mutation (putative driver)
+TCGA-QH-A65S,Non-codel,IDHmut-non-codel,Methylated,2.5,,Missense Mutation (putative driver)
+TCGA-HT-A614,Non-codel,IDHmut-non-codel,Methylated,2.7,,Missense Mutation (putative driver)
+TCGA-DU-7309,Non-codel,IDHmut-non-codel,Methylated,2.8,,
+TCGA-14-4157,Non-codel,IDHmut-non-codel,Methylated,3.4,,Missense Mutation (putative driver)
+TCGA-DH-A7UU,Non-codel,IDHmut-non-codel,Methylated,3.4,,Missense Mutation (putative driver)
+TCGA-S9-A6WQ,Non-codel,IDHmut-non-codel,Methylated,3.4,,Missense Mutation (putative driver)
+TCGA-DU-A5TU,Non-codel,IDHmut-non-codel,Methylated,3.6,,Missense Mutation (putative driver)
+TCGA-S9-A7QW,Non-codel,IDHmut-non-codel,Methylated,3.6,,Missense Mutation (putative driver)
+TCGA-HT-7474,Non-codel,IDHmut-non-codel,Methylated,3.7,,Missense Mutation (putative driver)
+TCGA-HT-7879,Non-codel,IDHmut-non-codel,Methylated,3.7,,Missense Mutation (putative driver)
+TCGA-DH-A66G,Non-codel,IDHmut-non-codel,Methylated,3.8,,Missense Mutation (putative driver)
+TCGA-HT-8114,Non-codel,IDHmut-non-codel,Methylated,3.9,,Missense Mutation (putative driver)
+TCGA-HT-7485,Non-codel,IDHmut-non-codel,Methylated,4,,Missense Mutation (putative driver)
+TCGA-S9-A7QX,Non-codel,IDHmut-non-codel,Methylated,4,,Missense Mutation (putative driver)
+TCGA-S9-A7IZ,Non-codel,IDHmut-non-codel,Methylated,4.2,,Missense Mutation (putative driver)
+TCGA-CS-4938,Non-codel,IDHmut-non-codel,Unmethylated,4.7,,Missense Mutation (putative driver)
+TCGA-06-6701,Non-codel,IDHmut-non-codel,Methylated,5,,Missense Mutation (putative driver)
+TCGA-HT-7601,Non-codel,IDHmut-non-codel,Methylated,5,,Missense Mutation (putative driver)
+TCGA-S9-A89Z,Non-codel,IDHmut-non-codel,Methylated,5,,Missense Mutation (putative driver)
+TCGA-HT-7880,Non-codel,IDHmut-non-codel,Methylated,5.3,,Missense Mutation (putative driver)
+TCGA-WH-A86K,Non-codel,IDHmut-non-codel,Methylated,5.3,,Missense Mutation (putative driver)
+TCGA-HT-A618,Non-codel,IDHmut-non-codel,Methylated,5.3,,
+TCGA-DU-A5TW,Non-codel,IDHmut-non-codel,Methylated,5.7,,Missense Mutation (putative driver)
+TCGA-P5-A5F1,Non-codel,IDHmut-non-codel,Unmethylated,5.9,,Missense Mutation (putative driver)
+TCGA-HT-7684,Non-codel,IDHmut-non-codel,Methylated,6,,Missense Mutation (putative driver)
+TCGA-DH-A7UV,Non-codel,IDHmut-non-codel,Methylated,6.2,,Missense Mutation (putative driver)
+TCGA-DB-A75L,Non-codel,IDHmut-non-codel,Methylated,6.4,,Missense Mutation (putative driver)
+TCGA-HT-7478,Non-codel,IDHmut-non-codel,Unmethylated,6.4,,Missense Mutation (putative driver)
+TCGA-HT-7476,Non-codel,IDHmut-non-codel,Methylated,6.5,,
+TCGA-DH-A7UT,Non-codel,IDHmut-non-codel,Methylated,6.6,,Missense Mutation (putative driver)
+TCGA-P5-A5EW,Non-codel,IDHmut-non-codel,Methylated,6.7,,Missense Mutation (putative driver)
+TCGA-DU-5855,Non-codel,IDHmut-non-codel,Methylated,6.8,,Missense Mutation (putative driver)
+TCGA-FG-A60J,Non-codel,IDHmut-non-codel,Methylated,7,,Missense Mutation (putative driver)
+TCGA-FG-A60L,Non-codel,IDHmut-non-codel,Methylated,7,,Missense Mutation (putative driver)
+TCGA-VV-A86M,Non-codel,IDHmut-non-codel,Methylated,7,,Missense Mutation (putative driver)
+TCGA-DU-A76O,Non-codel,IDHmut-non-codel,Methylated,7.1,,Missense Mutation (putative driver)
+TCGA-HT-7479,Non-codel,IDHmut-non-codel,Methylated,7.1,,Missense Mutation (putative driver)
+TCGA-DU-A6S7,Non-codel,IDHmut-non-codel,Methylated,7.2,,Missense Mutation (putative driver)
+TCGA-FG-A87N,Non-codel,IDHmut-non-codel,Methylated,7.4,,Missense Mutation (putative driver)
+TCGA-CS-6667,Non-codel,IDHmut-non-codel,Methylated,7.6,,Missense Mutation (putative driver)
+TCGA-P5-A5F2,Non-codel,IDHmut-non-codel,Methylated,7.6,,Missense Mutation (putative driver)
+TCGA-S9-A6WO,Non-codel,IDHmut-non-codel,Methylated,7.6,,Missense Mutation (putative driver)
+TCGA-DU-6542,Non-codel,IDHmut-non-codel,Methylated,7.7,,Missense Mutation (putative driver)
+TCGA-06-6389,Non-codel,IDHmut-non-codel,Methylated,7.8,,Missense Mutation (putative driver)
+TCGA-S9-A7IS,Non-codel,IDHmut-non-codel,Methylated,7.9,,Missense Mutation (putative driver)
+TCGA-HW-7489,Non-codel,IDHmut-non-codel,Methylated,8.3,,Missense Mutation (putative driver)
+TCGA-CS-6666,Non-codel,IDHmut-non-codel,Methylated,8.5,,Missense Mutation (putative driver)
+TCGA-HT-7470,Non-codel,IDHmut-non-codel,Methylated,8.8,,Missense Mutation (putative driver)
+TCGA-06-2570,Non-codel,IDHmut-non-codel,Methylated,9.4,,Missense Mutation (putative driver)
+TCGA-S9-A7J0,Non-codel,IDHmut-non-codel,Methylated,9.4,,Missense Mutation (putative driver)
+TCGA-FG-A4MY,Non-codel,IDHmut-non-codel,Methylated,9.7,,Missense Mutation (putative driver)
+TCGA-S9-A6U6,Non-codel,IDHmut-non-codel,Methylated,9.9,,Missense Mutation (putative driver)
+TCGA-DB-A75M,Non-codel,IDHmut-non-codel,Methylated,10.3,,Missense Mutation (putative driver)
+TCGA-27-2521,Non-codel,IDHmut-non-codel,Methylated,10.4,,Missense Mutation (putative driver)
+TCGA-HT-A74J,Non-codel,IDHmut-non-codel,Unmethylated,10.5,,Missense Mutation (putative driver)
+TCGA-CS-4944,Non-codel,IDHmut-non-codel,Methylated,10.6,,Missense Mutation (putative driver)
+TCGA-FG-A6J3,Non-codel,IDHmut-non-codel,Methylated,10.6,,Missense Mutation (putative driver)
+TCGA-DB-A64X,Non-codel,IDHmut-non-codel,Methylated,10.9,,Missense Mutation (putative driver)
+TCGA-VM-A8CH,Non-codel,IDHmut-non-codel,Unmethylated,10.9,,Missense Mutation (putative driver)
+TCGA-HT-7884,Non-codel,IDHmut-non-codel,Methylated,11.3,,Missense Mutation (putative driver)
+TCGA-S9-A6U1,Non-codel,IDHmut-non-codel,Methylated,11.3,,Missense Mutation (putative driver)
+TCGA-TM-A84T,Non-codel,IDHmut-non-codel,Methylated,12,,Missense Mutation (putative driver)
+TCGA-CS-6665,Non-codel,IDHmut-non-codel,Methylated,12.4,,Missense Mutation (putative driver)
+TCGA-DU-A5TR,Non-codel,IDHmut-non-codel,Methylated,12.6,,Missense Mutation (putative driver)
+TCGA-DB-A4XB,Non-codel,IDHmut-non-codel,Methylated,12.7,,Missense Mutation (putative driver)
+TCGA-32-4208,Non-codel,IDHmut-non-codel,Methylated,13.1,,Missense Mutation (putative driver)
+TCGA-DU-5853,Non-codel,IDHmut-non-codel,Methylated,13.4,,Missense Mutation (putative driver)
+TCGA-VM-A8CA,Non-codel,IDHmut-non-codel,Methylated,13.5,,Missense Mutation (putative driver)
+TCGA-FG-8182,Non-codel,IDHmut-non-codel,Methylated,13.7,,Missense Mutation (putative driver)
+TCGA-HT-A5R7,Non-codel,IDHmut-non-codel,Methylated,14,,Missense Mutation (putative driver)
+TCGA-DU-A5TP,Non-codel,IDHmut-non-codel,Methylated,14.2,,Missense Mutation (putative driver)
+TCGA-FG-8185,Non-codel,IDHmut-non-codel,Methylated,14.2,,Missense Mutation (putative driver)
+TCGA-DH-5143,Non-codel,IDHmut-non-codel,Methylated,14.4,,Missense Mutation (putative driver)
+TCGA-FG-6689,Non-codel,IDHmut-non-codel,Methylated,14.9,,Missense Mutation (putative driver)
+TCGA-FG-8188,Non-codel,IDHmut-non-codel,Methylated,14.9,,Missense Mutation (putative driver)
+TCGA-HT-7689,Non-codel,IDHmut-non-codel,Methylated,14.9,,Missense Mutation (putative driver)
+TCGA-DU-7010,Non-codel,IDHmut-non-codel,Methylated,15,,Missense Mutation (putative driver)
+TCGA-DU-A5TS,Non-codel,IDHmut-non-codel,Methylated,15.1,,Missense Mutation (putative driver)
+TCGA-02-2483,Non-codel,IDHmut-non-codel,Methylated,15.3,,Missense Mutation (putative driver)
+TCGA-DB-A64S,Non-codel,IDHmut-non-codel,Unmethylated,15.4,,Missense Mutation (putative driver)
+TCGA-DU-8167,Non-codel,IDHmut-non-codel,Methylated,15.5,,Missense Mutation (putative driver)
+TCGA-FG-8191,Non-codel,IDHmut-non-codel,Unmethylated,15.5,,Missense Mutation (putative driver)
+TCGA-DH-A66D,Non-codel,IDHmut-non-codel,Methylated,15.7,,Missense Mutation (putative driver)
+TCGA-HT-8563,Non-codel,IDHmut-non-codel,Unmethylated,16,,Missense Mutation (putative driver)
+TCGA-HT-7473,Non-codel,IDHmut-non-codel,Unmethylated,16.5,,Missense Mutation (putative driver)
+TCGA-19-A6J5,Non-codel,IDHmut-non-codel,Methylated,16.6,,Missense Mutation (putative driver)
+TCGA-DU-8166,Non-codel,IDHmut-non-codel,Methylated,17,,Missense Mutation (putative driver)
+TCGA-HT-7606,Non-codel,IDHmut-non-codel,Unmethylated,17.3,,Missense Mutation (putative driver)
+TCGA-DU-5851,Non-codel,IDHmut-non-codel,Unmethylated,17.4,,Missense Mutation (putative driver)
+TCGA-HT-7475,Non-codel,IDHmut-non-codel,Methylated,17.4,,Missense Mutation (putative driver)
+TCGA-S9-A7R4,Non-codel,IDHmut-non-codel,Methylated,17.4,,Missense Mutation (putative driver)
+TCGA-DU-5872,Non-codel,IDHmut-non-codel,Methylated,17.5,,Missense Mutation (putative driver)
+TCGA-HT-7693,Non-codel,IDHmut-non-codel,Methylated,17.5,,Missense Mutation (putative driver)
+TCGA-CS-6290,Non-codel,IDHmut-non-codel,Methylated,17.9,,Missense Mutation (putative driver)
+TCGA-FG-7636,Non-codel,IDHmut-non-codel,Methylated,17.9,,Missense Mutation (putative driver)
+TCGA-CS-4943,Non-codel,IDHmut-non-codel,Methylated,18.1,,Missense Mutation (putative driver)
+TCGA-DB-A4XF,Non-codel,IDHmut-non-codel,Methylated,18.4,,Missense Mutation (putative driver)
+TCGA-FG-A4MX,Non-codel,IDHmut-non-codel,Methylated,18.7,,Missense Mutation (putative driver)
+TCGA-DB-A4XE,Non-codel,IDHmut-non-codel,Methylated,18.8,,Missense Mutation (putative driver)
+TCGA-S9-A6TV,Non-codel,IDHmut-non-codel,Methylated,18.8,,Missense Mutation (putative driver)
+TCGA-DU-5871,Non-codel,IDHmut-non-codel,Methylated,18.9,,Missense Mutation (putative driver)
+TCGA-DU-7298,Non-codel,IDHmut-non-codel,Methylated,18.9,,Missense Mutation (putative driver)
+TCGA-TM-A84Q,Non-codel,IDHmut-non-codel,Methylated,18.9,,Missense Mutation (putative driver)
+TCGA-IK-7675,Non-codel,IDHmut-non-codel,Methylated,19,,Missense Mutation (putative driver)
+TCGA-HT-7855,Non-codel,IDHmut-non-codel,Methylated,19.2,,Missense Mutation (putative driver)
+TCGA-HW-7490,Non-codel,IDHmut-non-codel,Methylated,19.2,,Missense Mutation (putative driver)
+TCGA-TM-A84I,Non-codel,IDHmut-non-codel,Methylated,19.4,,Missense Mutation (putative driver)
+TCGA-HW-8321,Non-codel,IDHmut-non-codel,Methylated,19.6,,Missense Mutation (putative driver)
+TCGA-06-0221,Non-codel,IDHmut-non-codel,,19.8,,Missense Mutation (putative driver)
+TCGA-DU-8163,Non-codel,IDHmut-non-codel,Unmethylated,20.7,,Missense Mutation (putative driver)
+TCGA-HW-A5KM,Non-codel,IDHmut-non-codel,Methylated,20.7,,Missense Mutation (putative driver)
+TCGA-HW-A5KL,Non-codel,IDHmut-non-codel,Methylated,20.8,,Missense Mutation (putative driver)
+TCGA-HT-8018,Non-codel,IDHmut-non-codel,Methylated,21.5,,Missense Mutation (putative driver)
+TCGA-HW-8320,Non-codel,IDHmut-non-codel,Methylated,21.6,,Missense Mutation (putative driver)
+TCGA-S9-A6TZ,Non-codel,IDHmut-non-codel,Methylated,21.6,,Missense Mutation (putative driver)
+TCGA-HW-8319,Non-codel,IDHmut-non-codel,Unmethylated,21.7,,Missense Mutation (putative driver)
+TCGA-TM-A7CA,Non-codel,IDHmut-non-codel,Methylated,22.6,,Missense Mutation (putative driver)
+TCGA-06-0128,Non-codel,IDHmut-non-codel,Methylated,22.7,,Missense Mutation (putative driver)
+TCGA-HT-7603,Non-codel,IDHmut-non-codel,Methylated,23.2,,Missense Mutation (putative driver)
+TCGA-DU-7304,Non-codel,IDHmut-non-codel,Methylated,23.3,,Missense Mutation (putative driver)
+TCGA-DU-A7TC,Non-codel,IDHmut-non-codel,Methylated,23.5,,Missense Mutation (putative driver)
+TCGA-HT-7873,Non-codel,IDHmut-non-codel,Methylated,23.6,,Missense Mutation (putative driver)
+TCGA-FG-6691,Non-codel,IDHmut-non-codel,Unmethylated,24,,Missense Mutation (putative driver)
+TCGA-19-2629,Non-codel,IDHmut-non-codel,Unmethylated,24.2,,Missense Mutation (putative driver)
+TCGA-HT-7477,Non-codel,IDHmut-non-codel,Methylated,24.2,,Missense Mutation (putative driver)
+TCGA-TM-A84H,Non-codel,IDHmut-non-codel,Methylated,24.2,,Missense Mutation (putative driver)
+TCGA-FG-6690,Non-codel,IDHmut-non-codel,Methylated,25,,Missense Mutation (putative driver)
+TCGA-DU-7301,Non-codel,IDHmut-non-codel,Methylated,25.9,,Missense Mutation (putative driver)
+TCGA-DU-7019,Non-codel,IDHmut-non-codel,Methylated,26.3,,Missense Mutation (putative driver)
+TCGA-DB-A4XD,Non-codel,IDHmut-non-codel,Methylated,27,,Missense Mutation (putative driver)
+TCGA-DB-A4XC,Non-codel,IDHmut-non-codel,Methylated,27.6,,Missense Mutation (putative driver)
+TCGA-FG-A70Y,Non-codel,IDHmut-non-codel,Methylated,28.5,,Missense Mutation (putative driver)
+TCGA-HT-8113,Non-codel,IDHmut-non-codel,Methylated,29.6,,
+TCGA-HT-7602,Non-codel,IDHmut-non-codel,Methylated,29.8,,Missense Mutation (putative driver)
+TCGA-DB-A4X9,Non-codel,IDHmut-non-codel,Methylated,30.1,,Missense Mutation (putative driver)
+TCGA-DH-5142,Non-codel,IDHmut-non-codel,Methylated,30.3,,Missense Mutation (putative driver)
+TCGA-DB-A75O,Non-codel,IDHmut-non-codel,Methylated,30.7,,Missense Mutation (putative driver)
+TCGA-26-1442,Non-codel,IDHmut-non-codel,Methylated,31.3,,Missense Mutation (putative driver)
+TCGA-HT-7902,Non-codel,IDHmut-non-codel,Methylated,31.4,,Missense Mutation (putative driver)
+TCGA-S9-A7R8,Non-codel,IDHmut-non-codel,Methylated,31.6,,Missense Mutation (putative driver)
+TCGA-HT-7688,Non-codel,IDHmut-non-codel,Methylated,31.7,,Missense Mutation (putative driver)
+TCGA-E1-A7Z6,Non-codel,IDHmut-non-codel,Methylated,32.3,,Missense Mutation (putative driver)
+TCGA-E1-A7YV,Non-codel,IDHmut-non-codel,Methylated,32.4,,Missense Mutation (putative driver)
+TCGA-VM-A8C8,Non-codel,IDHmut-non-codel,Unmethylated,33.1,,Missense Mutation (putative driver)
+TCGA-06-0129,Non-codel,IDHmut-non-codel,Methylated,33.6,,Missense Mutation (putative driver)
+TCGA-TM-A7C4,Non-codel,IDHmut-non-codel,Methylated,35.9,,Missense Mutation (putative driver)
+TCGA-DB-5280,Non-codel,IDHmut-non-codel,Methylated,36.5,,Missense Mutation (putative driver)
+TCGA-E1-A7YW,Non-codel,IDHmut-non-codel,Methylated,36.8,,Missense Mutation (putative driver)
+TCGA-FG-5965,Non-codel,IDHmut-non-codel,Methylated,36.8,,Missense Mutation (putative driver)
+TCGA-FG-A4MT,Non-codel,IDHmut-non-codel,Methylated,38.2,,Missense Mutation (putative driver)
+TCGA-CS-5393,Non-codel,IDHmut-non-codel,Methylated,40.1,,Missense Mutation (putative driver)
+TCGA-TM-A84L,Non-codel,IDHmut-non-codel,Methylated,40.8,,Missense Mutation (putative driver)
+TCGA-14-1456,Non-codel,IDHmut-non-codel,Unmethylated,40.9,,Missense Mutation (putative driver)
+TCGA-E1-5304,Non-codel,IDHmut-non-codel,Unmethylated,41.1,,Missense Mutation (putative driver)
+TCGA-DH-A66B,Non-codel,IDHmut-non-codel,Methylated,42,,Missense Mutation (putative driver)
+TCGA-DU-7306,Non-codel,IDHmut-non-codel,Methylated,42,,Missense Mutation (putative driver)
+TCGA-HT-7686,Non-codel,IDHmut-non-codel,Methylated,42.7,,Missense Mutation (putative driver)
+TCGA-FG-A711,Non-codel,IDHmut-non-codel,Unmethylated,43.7,,Missense Mutation (putative driver)
+TCGA-CS-4942,Non-codel,IDHmut-non-codel,Unmethylated,43.9,,Missense Mutation (putative driver)
+TCGA-WY-A858,Non-codel,IDHmut-non-codel,Methylated,43.9,,Missense Mutation (putative driver)
+TCGA-DU-7299,Non-codel,IDHmut-non-codel,Methylated,44,,Missense Mutation (putative driver)
+TCGA-DU-A7TG,Non-codel,IDHmut-non-codel,Methylated,44.4,,
+TCGA-HT-7609,Non-codel,IDHmut-non-codel,Methylated,46,,Missense Mutation (putative driver)
+TCGA-06-0151,Non-codel,IDHmut-non-codel,,46.6,,
+TCGA-DB-5275,Non-codel,IDHmut-non-codel,Methylated,47.9,,Missense Mutation (putative driver)
+TCGA-TM-A7CF,Non-codel,IDHmut-non-codel,Methylated,48.4,,Missense Mutation (putative driver)
+TCGA-DU-6395,Non-codel,IDHmut-non-codel,Methylated,49,,Missense Mutation (putative driver)
+TCGA-E1-5302,Non-codel,IDHmut-non-codel,Methylated,50.1,,Missense Mutation (putative driver)
+TCGA-15-1444,Non-codel,IDHmut-non-codel,Methylated,50.5,,Missense Mutation (putative driver)
+TCGA-HT-7858,Non-codel,IDHmut-non-codel,Methylated,50.6,,Missense Mutation (putative driver)
+TCGA-TM-A84F,Non-codel,IDHmut-non-codel,Methylated,50.7,,Missense Mutation (putative driver)
+TCGA-DB-5277,Non-codel,IDHmut-non-codel,Methylated,50.8,,Missense Mutation (putative driver)
+TCGA-HT-7610,Non-codel,IDHmut-non-codel,Methylated,56.1,,Missense Mutation (putative driver)
+TCGA-HT-7611,Non-codel,IDHmut-non-codel,Methylated,57.6,,Missense Mutation (putative driver)
+TCGA-E1-5307,Non-codel,IDHmut-non-codel,Methylated,57.9,,Missense Mutation (putative driver)
+TCGA-HT-7482,Non-codel,IDHmut-non-codel,Methylated,60,,Missense Mutation (putative driver)
+TCGA-S9-A6TS,Non-codel,IDHmut-non-codel,Methylated,62.1,,Missense Mutation (putative driver)
+TCGA-DU-7007,Non-codel,IDHmut-non-codel,Methylated,62.9,,Missense Mutation (putative driver)
+TCGA-HT-8013,Non-codel,IDHmut-non-codel,Methylated,63.5,,Missense Mutation (putative driver)
+TCGA-DU-6399,Non-codel,IDHmut-non-codel,Methylated,65.7,,
+TCGA-E1-5303,Non-codel,IDHmut-non-codel,Methylated,67.4,,Missense Mutation (putative driver)
+TCGA-S9-A6TU,Non-codel,IDHmut-non-codel,Methylated,69,,Missense Mutation (putative driver)
+TCGA-S9-A6WG,Non-codel,IDHmut-non-codel,Methylated,70.5,,Missense Mutation (putative driver)
+TCGA-S9-A6WI,Non-codel,IDHmut-non-codel,Methylated,70.6,,Missense Mutation (putative driver)
+TCGA-DB-5276,Non-codel,IDHmut-non-codel,Methylated,72.9,,Missense Mutation (putative driver)
+TCGA-DU-6396,Non-codel,IDHmut-non-codel,Methylated,75.1,,Missense Mutation (putative driver)
+TCGA-DU-A7TA,Non-codel,IDHmut-non-codel,Methylated,77.8,,
+TCGA-DB-5281,Non-codel,IDHmut-non-codel,Methylated,78.2,,Missense Mutation (putative driver)
+TCGA-E1-5305,Non-codel,IDHmut-non-codel,Methylated,79.9,,Missense Mutation (putative driver)
+TCGA-DB-5273,Non-codel,IDHmut-non-codel,Unmethylated,81.9,,Missense Mutation (putative driver)
+TCGA-S9-A6U9,Non-codel,IDHmut-non-codel,Methylated,83.6,,Missense Mutation (putative driver)
+TCGA-S9-A7R7,Non-codel,IDHmut-non-codel,Methylated,83.7,,Missense Mutation (putative driver)
+TCGA-S9-A7R3,Non-codel,IDHmut-non-codel,Methylated,87,,Missense Mutation (putative driver)
+TCGA-DU-6401,Non-codel,IDHmut-non-codel,Methylated,87.4,,Missense Mutation (putative driver)
+TCGA-DU-7015,Non-codel,IDHmut-non-codel,Methylated,90.7,,Missense Mutation (putative driver)
+TCGA-DU-6407,Non-codel,IDHmut-non-codel,Methylated,94.5,,Missense Mutation (putative driver)
+TCGA-S9-A6U8,Non-codel,IDHmut-non-codel,Methylated,94.6,,Missense Mutation (putative driver)
+TCGA-DB-5270,Non-codel,IDHmut-non-codel,Methylated,97.8,,Missense Mutation (putative driver)
+TCGA-DU-7011,Non-codel,IDHmut-non-codel,Unmethylated,105.1,,Missense Mutation (putative driver)
+TCGA-HT-7604,Non-codel,IDHmut-non-codel,Methylated,107.9,,Missense Mutation (putative driver)
+TCGA-DU-6408,Non-codel,IDHmut-non-codel,Methylated,114,,Missense Mutation (putative driver)
+TCGA-DU-A7T8,Non-codel,IDHmut-non-codel,Methylated,124.4,,Missense Mutation (putative driver)
+TCGA-E1-5322,Non-codel,IDHmut-non-codel,Methylated,130.7,,Missense Mutation (putative driver)
+TCGA-HT-7483,Non-codel,IDHmut-non-codel,Unmethylated,154.1,,Missense Mutation (putative driver)
+TCGA-DU-7008,Non-codel,IDHmut-non-codel,Methylated,156.1,,Missense Mutation (putative driver)
+TCGA-E1-A7YE,Non-codel,IDHmut-non-codel,Unmethylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7YH,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7YI,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7YK,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7YU,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7YY,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7Z3,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-E1-A7Z4,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-HT-A61B,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A735,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A736,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-P5-A780,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-R8-A6YH,Non-codel,IDHmut-non-codel,Unmethylated,,,Missense Mutation (putative driver)
+TCGA-RY-A83Z,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A843,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-RY-A845,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RF,Non-codel,IDHmut-non-codel,Unmethylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RH,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RJ,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RK,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RM,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RR,Non-codel,IDHmut-non-codel,Unmethylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RV,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A7RW,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-TQ-A8XE,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-VM-A8CF,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-WY-A85A,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-WY-A85B,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-WY-A85C,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-WY-A85D,Non-codel,IDHmut-non-codel,Unmethylated,,,Missense Mutation (putative driver)
+TCGA-WY-A85E,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-WY-A859,Non-codel,IDHmut-non-codel,Methylated,,,Missense Mutation (putative driver)
+TCGA-QH-A6CX,Non-codel,IDHwt,Unmethylated,0,,
+TCGA-32-1977,Non-codel,IDHwt,Methylated,0.1,,
+TCGA-87-5896,Non-codel,IDHwt,Unmethylated,0.1,,
+TCGA-HT-7691,Non-codel,IDHwt,Unmethylated,0.1,,
+TCGA-HT-8015,Non-codel,IDHwt,Unmethylated,0.1,,
+TCGA-06-0140,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-19-2624,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-41-4097,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-76-6661,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-HT-7857,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-HT-A4DS,Non-codel,IDHwt,Unmethylated,0.2,,
+TCGA-P5-A72U,Non-codel,IDHwt,Methylated,0.2,,
+TCGA-06-2569,Non-codel,IDHwt,Unmethylated,0.4,,
+TCGA-06-0213,Non-codel,IDHwt,,0.5,,
+TCGA-HT-7860,Non-codel,IDHwt,Methylated,0.5,,
+TCGA-HT-8107,Non-codel,IDHwt,Methylated,0.5,,
+TCGA-DU-A7TJ,Non-codel,IDHwt,Methylated,0.6,,
+TCGA-FG-A4MU,Non-codel,IDHwt,Methylated,0.6,,
+TCGA-06-0219,Non-codel,IDHwt,,0.7,,
+TCGA-28-2502,Non-codel,IDHwt,Unmethylated,0.7,,
+TCGA-14-1043,Non-codel,IDHwt,Unmethylated,0.8,,
+TCGA-HT-7680,Non-codel,IDHwt,Unmethylated,0.8,,
+TCGA-06-0750,Non-codel,IDHwt,,0.9,,
+TCGA-41-2571,Non-codel,IDHwt,Unmethylated,0.9,,
+TCGA-14-0781,Non-codel,IDHwt,Unmethylated,1,,
+TCGA-41-3392,Non-codel,IDHwt,Unmethylated,1,,
+TCGA-06-2557,Non-codel,IDHwt,Unmethylated,1.1,,
+TCGA-26-5136,Non-codel,IDHwt,Methylated,1.2,,
+TCGA-28-1753,Non-codel,IDHwt,Unmethylated,1.2,,
+TCGA-32-1980,Non-codel,IDHwt,Unmethylated,1.2,,
+TCGA-14-0813,Non-codel,IDHwt,Methylated,1.3,,
+TCGA-P5-A5F6,Non-codel,IDHwt,Unmethylated,1.3,,
+TCGA-14-1395,Non-codel,IDHwt,Unmethylated,1.4,,
+TCGA-06-6391,Non-codel,IDHwt,Unmethylated,1.5,,
+TCGA-06-6699,Non-codel,IDHwt,Unmethylated,1.5,,
+TCGA-26-5139,Non-codel,IDHwt,Unmethylated,1.6,,
+TCGA-81-5910,Non-codel,IDHwt,Unmethylated,1.6,,
+TCGA-19-5955,Non-codel,IDHwt,Methylated,1.8,,
+TCGA-06-A5U1,Non-codel,IDHwt,Methylated,1.9,,
+TCGA-12-5301,Non-codel,IDHwt,Methylated,2,,
+TCGA-06-0649,Non-codel,IDHwt,,2.1,,
+TCGA-06-0142,Non-codel,IDHwt,Unmethylated,2.2,,
+TCGA-14-0787,Non-codel,IDHwt,Methylated,2.2,,
+TCGA-06-0145,Non-codel,IDHwt,Methylated,2.3,,
+TCGA-26-6174,Non-codel,IDHwt,Methylated,2.3,,
+TCGA-HT-A74H,Non-codel,IDHwt,Unmethylated,2.4,,
+TCGA-P5-A5EY,Non-codel,IDHwt,Unmethylated,2.4,,
+TCGA-02-0055,Non-codel,IDHwt,Unmethylated,2.5,,
+TCGA-28-1747,Non-codel,IDHwt,Methylated,2.5,,
+TCGA-28-5209,Non-codel,IDHwt,Methylated,2.5,,
+TCGA-76-4934,Non-codel,IDHwt,Methylated,2.5,,
+TCGA-06-A6S1,Non-codel,IDHwt,Unmethylated,2.6,,
+TCGA-06-0119,Non-codel,IDHwt,Methylated,2.7,,
+TCGA-06-0747,Non-codel,IDHwt,,2.7,,
+TCGA-06-0749,Non-codel,IDHwt,,2.7,,
+TCGA-06-5418,Non-codel,IDHwt,Unmethylated,2.7,,
+TCGA-76-6193,Non-codel,IDHwt,Unmethylated,2.7,,
+TCGA-02-0033,Non-codel,IDHwt,Methylated,2.8,,
+TCGA-06-2562,Non-codel,IDHwt,Unmethylated,2.8,,
+TCGA-14-0862,Non-codel,IDHwt,Methylated,2.9,,
+TCGA-27-2526,Non-codel,IDHwt,Unmethylated,2.9,,
+TCGA-QH-A6CV,Non-codel,IDHwt,Unmethylated,3,,
+TCGA-06-A6S0,Non-codel,IDHwt,Unmethylated,3.1,,
+TCGA-76-4928,Non-codel,IDHwt,Methylated,3.1,,
+TCGA-06-0157,Non-codel,IDHwt,,3.2,,
+TCGA-06-0174,Non-codel,IDHwt,,3.2,,
+TCGA-12-5299,Non-codel,IDHwt,Unmethylated,3.2,,
+TCGA-06-0169,Non-codel,IDHwt,Unmethylated,3.3,,
+TCGA-76-6192,Non-codel,IDHwt,Unmethylated,3.3,,
+TCGA-74-6573,Non-codel,IDHwt,Unmethylated,3.4,,
+TCGA-HT-A61C,Non-codel,IDHwt,Unmethylated,3.4,,
+TCGA-06-5410,Non-codel,IDHwt,Methylated,3.5,,
+TCGA-12-0692,Non-codel,IDHwt,,3.6,,
+TCGA-76-4929,Non-codel,IDHwt,Methylated,3.6,,
+TCGA-06-5856,Non-codel,IDHwt,Unmethylated,3.7,,
+TCGA-32-4210,Non-codel,IDHwt,Unmethylated,3.7,,
+TCGA-HT-7882,Non-codel,IDHwt,Methylated,3.7,,
+TCGA-DB-A75P,Non-codel,IDHwt,Unmethylated,3.8,,
+TCGA-16-0846,Non-codel,IDHwt,Methylated,3.9,,
+TCGA-19-A6J4,Non-codel,IDHwt,Unmethylated,4,,
+TCGA-19-2625,Non-codel,IDHwt,Unmethylated,4.1,,
+TCGA-QH-A6CS,Non-codel,IDHwt,Unmethylated,4.2,,
+TCGA-16-0861,Non-codel,IDHwt,Unmethylated,4.3,,
+TCGA-74-6577,Non-codel,IDHwt,Unmethylated,4.3,,
+TCGA-06-2567,Non-codel,IDHwt,Methylated,4.4,,
+TCGA-41-3393,Non-codel,IDHwt,Unmethylated,4.4,,
+TCGA-06-0173,Non-codel,IDHwt,,4.5,,
+TCGA-06-5412,Non-codel,IDHwt,Methylated,4.5,,
+TCGA-76-4926,Non-codel,IDHwt,Unmethylated,4.5,,
+TCGA-06-5859,Non-codel,IDHwt,Unmethylated,4.6,,
+TCGA-02-0003,Non-codel,IDHwt,Unmethylated,4.7,,
+TCGA-06-A5U0,Non-codel,IDHwt,Methylated,4.7,,
+TCGA-19-5953,Non-codel,IDHwt,Methylated,4.7,,
+TCGA-32-1982,Non-codel,IDHwt,Methylated,4.7,,
+TCGA-HT-8110,Non-codel,IDHwt,Methylated,4.7,,
+TCGA-KT-A7W1,Non-codel,IDHwt,Methylated,4.7,,
+TCGA-06-6698,Non-codel,IDHwt,Unmethylated,4.8,,
+TCGA-06-6700,Non-codel,IDHwt,Methylated,4.8,,
+TCGA-28-2509,Non-codel,IDHwt,Methylated,4.8,,
+TCGA-76-4925,Non-codel,IDHwt,Methylated,4.8,,
+TCGA-76-6656,Non-codel,IDHwt,Methylated,4.8,,
+TCGA-06-2559,Non-codel,IDHwt,Methylated,4.9,,
+TCGA-19-2620,Non-codel,IDHwt,Methylated,4.9,,
+TCGA-76-6657,Non-codel,IDHwt,Methylated,5,,
+TCGA-DU-A5TT,Non-codel,IDHwt,Methylated,5,,
+TCGA-QH-A6XC,Non-codel,IDHwt,Methylated,5,,
+TCGA-27-1830,Non-codel,IDHwt,Unmethylated,5.1,,
+TCGA-DU-8158,Non-codel,IDHwt,Unmethylated,5.1,,
+TCGA-06-6388,Non-codel,IDHwt,Unmethylated,5.2,,
+TCGA-28-5218,Non-codel,IDHwt,Unmethylated,5.2,,
+TCGA-19-5959,Non-codel,IDHwt,Methylated,5.3,,
+TCGA-28-2514,Non-codel,IDHwt,Unmethylated,5.3,,
+TCGA-FG-A4MW,Non-codel,IDHwt,Methylated,5.3,,
+TCGA-HT-A5RC,Non-codel,IDHwt,Unmethylated,5.3,,
+TCGA-06-0882,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-06-6390,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-14-0817,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-19-5958,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-19-5960,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-28-6450,Non-codel,IDHwt,Unmethylated,5.4,,
+TCGA-32-5222,Non-codel,IDHwt,Methylated,5.4,,
+TCGA-26-5134,Non-codel,IDHwt,Unmethylated,5.5,,
+TCGA-06-0645,Non-codel,IDHwt,,5.7,,
+TCGA-06-0646,Non-codel,IDHwt,,5.7,,
+TCGA-FG-A87Q,Non-codel,IDHwt,Methylated,5.7,,
+TCGA-06-0166,Non-codel,IDHwt,,5.8,,
+TCGA-06-0881,Non-codel,IDHwt,Unmethylated,5.8,,
+TCGA-S9-A6UA,Non-codel,IDHwt,Methylated,5.8,,
+TCGA-06-2564,Non-codel,IDHwt,Unmethylated,5.9,,
+TCGA-OX-A56R,Non-codel,IDHwt,Methylated,5.9,,
+TCGA-41-3915,Non-codel,IDHwt,Methylated,6,,
+TCGA-06-0122,Non-codel,IDHwt,Unmethylated,6.1,,
+TCGA-06-5858,Non-codel,IDHwt,Unmethylated,6.1,,
+TCGA-RR-A6KA,Non-codel,IDHwt,Methylated,6.3,,
+TCGA-CS-5397,Non-codel,IDHwt,Unmethylated,6.4,,
+TCGA-DU-7012,Non-codel,IDHwt,Methylated,6.5,,
+TCGA-19-5947,Non-codel,IDHwt,Unmethylated,6.6,,
+TCGA-06-0877,Non-codel,IDHwt,Methylated,6.7,,
+TCGA-DU-5852,Non-codel,IDHwt,Methylated,6.7,,
+TCGA-06-2565,Non-codel,IDHwt,Methylated,6.8,,
+TCGA-19-A60I,Non-codel,IDHwt,Methylated,6.8,,
+TCGA-06-0126,Non-codel,IDHwt,Unmethylated,6.9,,
+TCGA-19-2631,Non-codel,IDHwt,Methylated,7,,
+TCGA-DU-6402,Non-codel,IDHwt,Unmethylated,7,,
+TCGA-06-0878,Non-codel,IDHwt,Unmethylated,7.2,,
+TCGA-14-1829,Non-codel,IDHwt,Unmethylated,7.2,,
+TCGA-28-2513,Non-codel,IDHwt,Unmethylated,7.3,,
+TCGA-06-0195,Non-codel,IDHwt,,7.4,,
+TCGA-06-0210,Non-codel,IDHwt,,7.4,,
+TCGA-06-6694,Non-codel,IDHwt,Methylated,7.4,,
+TCGA-32-2638,Non-codel,IDHwt,Methylated,7.4,,
+TCGA-19-2623,Non-codel,IDHwt,Methylated,7.5,,
+TCGA-74-6584,Non-codel,IDHwt,Unmethylated,7.5,,
+TCGA-DU-A7TD,Non-codel,IDHwt,Unmethylated,7.5,,
+TCGA-06-0209,Non-codel,IDHwt,,7.6,,
+TCGA-14-1825,Non-codel,IDHwt,Unmethylated,7.6,,
+TCGA-27-2524,Non-codel,IDHwt,Unmethylated,7.6,,
+TCGA-76-6663,Non-codel,IDHwt,Unmethylated,7.7,,
+TCGA-CS-4941,Non-codel,IDHwt,Methylated,7.7,,
+TCGA-41-6646,Non-codel,IDHwt,Methylated,7.8,,
+TCGA-76-6664,Non-codel,IDHwt,Methylated,7.8,,
+TCGA-06-0745,Non-codel,IDHwt,,7.9,,
+TCGA-26-6173,Non-codel,IDHwt,Unmethylated,7.9,,
+TCGA-VM-A8CD,Non-codel,IDHwt,Unmethylated,7.9,,
+TCGA-19-5951,Non-codel,IDHwt,Unmethylated,8,,
+TCGA-19-5954,Non-codel,IDHwt,Methylated,8,,
+TCGA-DU-7292,Non-codel,IDHwt,Methylated,8,,
+TCGA-VW-A8FI,Non-codel,IDHwt,Unmethylated,8,,
+TCGA-06-5411,Non-codel,IDHwt,Unmethylated,8.3,,
+TCGA-06-6695,Non-codel,IDHwt,Methylated,8.3,,
+TCGA-76-6285,Non-codel,IDHwt,Unmethylated,8.3,,
+TCGA-DU-5854,Non-codel,IDHwt,Unmethylated,8.4,,
+TCGA-06-2563,Non-codel,IDHwt,Methylated,8.5,,
+TCGA-06-5415,Non-codel,IDHwt,Unmethylated,8.5,,
+TCGA-28-5219,Non-codel,IDHwt,Methylated,8.5,,
+TCGA-06-5413,Non-codel,IDHwt,Unmethylated,8.8,,
+TCGA-32-2632,Non-codel,IDHwt,Unmethylated,8.8,,
+TCGA-DU-7013,Non-codel,IDHwt,Unmethylated,8.8,,
+TCGA-06-0876,Non-codel,IDHwt,Methylated,8.9,,
+TCGA-26-5135,Non-codel,IDHwt,Methylated,8.9,,
+TCGA-32-2634,Non-codel,IDHwt,Methylated,8.9,,
+TCGA-41-2573,Non-codel,IDHwt,Methylated,8.9,,
+TCGA-06-5414,Non-codel,IDHwt,Unmethylated,9,,
+TCGA-06-0875,Non-codel,IDHwt,Unmethylated,9.2,,
+TCGA-76-4931,Non-codel,IDHwt,Unmethylated,9.2,,
+TCGA-06-2561,Non-codel,IDHwt,Unmethylated,9.3,,
+TCGA-76-6662,Non-codel,IDHwt,Unmethylated,9.3,,
+TCGA-S9-A6WM,Non-codel,IDHwt,Unmethylated,9.3,,
+TCGA-06-0686,Non-codel,IDHwt,,9.4,,
+TCGA-26-5132,Non-codel,IDHwt,Methylated,9.4,,
+TCGA-41-2575,Non-codel,IDHwt,Unmethylated,9.5,,
+TCGA-19-2619,Non-codel,IDHwt,Methylated,9.7,,
+TCGA-06-0648,Non-codel,IDHwt,,9.8,,
+TCGA-28-5213,Non-codel,IDHwt,Unmethylated,9.8,,
+TCGA-27-1832,Non-codel,IDHwt,Unmethylated,9.9,,
+TCGA-06-0141,Non-codel,IDHwt,Unmethylated,10.3,,
+TCGA-DU-7290,Non-codel,IDHwt,Unmethylated,10.3,,
+TCGA-06-0155,Non-codel,IDHwt,Unmethylated,10.4,,
+TCGA-06-0190,Non-codel,IDHwt,,10.4,,
+TCGA-27-2519,Non-codel,IDHwt,Unmethylated,10.4,,
+TCGA-S9-A7R2,Non-codel,IDHwt,Unmethylated,10.4,,
+TCGA-28-5220,Non-codel,IDHwt,Unmethylated,10.5,,
+TCGA-12-0821,Non-codel,IDHwt,Unmethylated,10.6,,
+TCGA-06-0158,Non-codel,IDHwt,,10.8,,
+TCGA-32-4719,Non-codel,IDHwt,Unmethylated,10.8,,
+TCGA-76-4935,Non-codel,IDHwt,Methylated,10.8,,
+TCGA-FG-A70Z,Non-codel,IDHwt,Methylated,10.8,,
+TCGA-12-3650,Non-codel,IDHwt,Unmethylated,10.9,,
+TCGA-28-5215,Non-codel,IDHwt,Methylated,11,,
+TCGA-14-0789,Non-codel,IDHwt,Methylated,11.2,,
+TCGA-19-5950,Non-codel,IDHwt,Methylated,11.3,,
+TCGA-28-5207,Non-codel,IDHwt,Unmethylated,11.3,,
+TCGA-76-6280,Non-codel,IDHwt,Methylated,11.4,,
+TCGA-DU-A76K,Non-codel,IDHwt,Unmethylated,11.4,,
+TCGA-27-1838,Non-codel,IDHwt,Unmethylated,11.5,,
+TCGA-41-5651,Non-codel,IDHwt,Methylated,11.5,,
+TCGA-DU-7006,Non-codel,IDHwt,Methylated,11.5,,
+TCGA-HT-7469,Non-codel,IDHwt,Methylated,11.5,,
+TCGA-DU-6403,Non-codel,IDHwt,Unmethylated,11.6,,
+TCGA-06-5408,Non-codel,IDHwt,Unmethylated,11.7,,
+TCGA-32-4213,Non-codel,IDHwt,Methylated,11.7,,
+TCGA-06-0211,Non-codel,IDHwt,,11.8,,
+TCGA-28-5211,Non-codel,IDHwt,Unmethylated,11.8,,
+TCGA-06-0139,Non-codel,IDHwt,Unmethylated,11.9,,
+TCGA-14-0740,Non-codel,IDHwt,Methylated,12,,
+TCGA-TM-A84B,Non-codel,IDHwt,Unmethylated,12,,
+TCGA-32-2491,Non-codel,IDHwt,Unmethylated,12.2,,
+TCGA-DU-A5TY,Non-codel,IDHwt,Methylated,12.2,,
+TCGA-HT-8104,Non-codel,IDHwt,Unmethylated,12.2,,
+TCGA-06-0152,Non-codel,IDHwt,,12.3,,
+TCGA-06-0644,Non-codel,IDHwt,,12.3,,
+TCGA-06-2558,Non-codel,IDHwt,Unmethylated,12.5,,
+TCGA-32-4211,Non-codel,IDHwt,Unmethylated,12.6,,
+TCGA-32-1986,Non-codel,IDHwt,Unmethylated,12.7,,
+TCGA-HW-A5KK,Non-codel,IDHwt,Methylated,12.7,,
+TCGA-06-6697,Non-codel,IDHwt,Unmethylated,12.8,,
+TCGA-02-2470,Non-codel,IDHwt,Unmethylated,12.9,,
+TCGA-06-0130,Non-codel,IDHwt,Unmethylated,12.9,,
+TCGA-12-0618,Non-codel,IDHwt,,13,,
+TCGA-06-0171,Non-codel,IDHwt,,13.1,,
+TCGA-06-0238,Non-codel,IDHwt,,13.3,,
+TCGA-41-2572,Non-codel,IDHwt,Unmethylated,13.3,,
+TCGA-06-0237,Non-codel,IDHwt,,13.6,,
+TCGA-06-1804,Non-codel,IDHwt,Methylated,13.6,,
+TCGA-28-5216,Non-codel,IDHwt,Unmethylated,13.6,,
+TCGA-14-0790,Non-codel,IDHwt,Methylated,13.8,,
+TCGA-15-0742,Non-codel,IDHwt,,13.8,,
+TCGA-06-0154,Non-codel,IDHwt,,13.9,,
+TCGA-26-1439,Non-codel,IDHwt,Unmethylated,13.9,,
+TCGA-27-1837,Non-codel,IDHwt,Methylated,14,,
+TCGA-28-5214,Non-codel,IDHwt,Unmethylated,14.2,,
+TCGA-74-6578,Non-codel,IDHwt,Methylated,14.3,,
+TCGA-27-2527,Non-codel,IDHwt,Methylated,14.4,,
+TCGA-12-3653,Non-codel,IDHwt,Unmethylated,14.5,,
+TCGA-DU-8162,Non-codel,IDHwt,Unmethylated,14.6,,
+TCGA-02-0047,Non-codel,IDHwt,Unmethylated,14.7,,
+TCGA-12-0616,Non-codel,IDHwt,,14.7,,
+TCGA-HT-A5RA,Non-codel,IDHwt,Unmethylated,14.7,,
+TCGA-06-0241,Non-codel,IDHwt,,14.9,,
+TCGA-12-5295,Non-codel,IDHwt,Methylated,14.9,,
+TCGA-26-5133,Non-codel,IDHwt,Unmethylated,14.9,,
+TCGA-28-5204,Non-codel,IDHwt,Unmethylated,14.9,,
+TCGA-06-0214,Non-codel,IDHwt,,15,,
+TCGA-32-2495,Non-codel,IDHwt,Unmethylated,15,,
+TCGA-TM-A84C,Non-codel,IDHwt,Unmethylated,15.1,,
+TCGA-12-3649,Non-codel,IDHwt,Unmethylated,15.2,,
+TCGA-06-1806,Non-codel,IDHwt,Unmethylated,15.3,,
+TCGA-12-0615,Non-codel,IDHwt,,15.3,,
+TCGA-02-2485,Non-codel,IDHwt,Unmethylated,15.4,,
+TCGA-06-0189,Non-codel,IDHwt,,15.4,,
+TCGA-32-1970,Non-codel,IDHwt,Unmethylated,15.4,,
+TCGA-28-5208,Non-codel,IDHwt,Methylated,15.6,,
+TCGA-HT-8564,Non-codel,IDHwt,Unmethylated,15.7,,
+TCGA-27-2528,Non-codel,IDHwt,Methylated,15.8,,
+TCGA-14-1034,Non-codel,IDHwt,Methylated,15.9,,
+TCGA-32-2615,Non-codel,IDHwt,Unmethylated,15.9,,
+TCGA-27-2523,Non-codel,IDHwt,Methylated,16.1,,
+TCGA-HT-A617,Non-codel,IDHwt,Unmethylated,16.1,,
+TCGA-02-2486,Non-codel,IDHwt,Unmethylated,16.2,,
+TCGA-HT-8011,Non-codel,IDHwt,Unmethylated,16.2,,
+TCGA-S9-A6U0,Non-codel,IDHwt,Methylated,16.4,,
+TCGA-27-1831,Non-codel,IDHwt,Unmethylated,16.6,,
+TCGA-76-6191,Non-codel,IDHwt,Unmethylated,16.7,,
+TCGA-DU-6406,Non-codel,IDHwt,Unmethylated,16.8,,
+TCGA-32-1991,Non-codel,IDHwt,Unmethylated,16.9,,
+TCGA-76-6282,Non-codel,IDHwt,Unmethylated,17.1,,
+TCGA-14-2554,Non-codel,IDHwt,Unmethylated,17.5,,
+TCGA-74-6575,Non-codel,IDHwt,Unmethylated,17.5,,
+TCGA-TM-A84J,Non-codel,IDHwt,Unmethylated,17.5,,
+TCGA-81-5911,Non-codel,IDHwt,Unmethylated,17.7,,
+TCGA-CS-6186,Non-codel,IDHwt,Unmethylated,17.7,,
+TCGA-14-1823,Non-codel,IDHwt,Methylated,17.8,,
+TCGA-08-0386,Non-codel,IDHwt,,18,,
+TCGA-DU-5847,Non-codel,IDHwt,Methylated,18,,
+TCGA-06-0192,Non-codel,IDHwt,,18.3,,
+TCGA-FG-6692,Non-codel,IDHwt,Methylated,18.4,,
+TCGA-S9-A89V,Non-codel,IDHwt,Methylated,18.7,,
+TCGA-DB-A64O,Non-codel,IDHwt,Unmethylated,18.8,,
+TCGA-FG-6688,Non-codel,IDHwt,Methylated,18.8,,
+TCGA-19-5952,Non-codel,IDHwt,Unmethylated,18.9,,
+TCGA-DU-8165,Non-codel,IDHwt,Unmethylated,19.1,,
+TCGA-06-0744,Non-codel,IDHwt,,19.5,,
+TCGA-32-1979,Non-codel,IDHwt,Unmethylated,19.5,,
+TCGA-06-0168,Non-codel,IDHwt,,19.6,,
+TCGA-S9-A7IX,Non-codel,IDHwt,Unmethylated,19.6,,
+TCGA-DH-5140,Non-codel,IDHwt,Unmethylated,19.9,,
+TCGA-DU-6405,Non-codel,IDHwt,Methylated,19.9,,
+TCGA-FG-7643,Non-codel,IDHwt,Methylated,20.1,,
+TCGA-06-0124,Non-codel,IDHwt,Methylated,20.4,,
+TCGA-RR-A6KC,Non-codel,IDHwt,Unmethylated,20.5,,
+TCGA-32-2494,Non-codel,IDHwt,Methylated,20.8,,
+TCGA-06-0939,Non-codel,IDHwt,Unmethylated,20.9,,
+TCGA-76-6286,Non-codel,IDHwt,Unmethylated,21,,
+TCGA-CS-5395,Non-codel,IDHwt,Unmethylated,21,,
+TCGA-27-1835,Non-codel,IDHwt,Methylated,21.3,,
+TCGA-06-0743,Non-codel,IDHwt,,22.3,,
+TCGA-06-0879,Non-codel,IDHwt,Methylated,23,,
+TCGA-14-0786,Non-codel,IDHwt,Methylated,23,,
+TCGA-06-0650,Non-codel,IDHwt,Unmethylated,23.6,,
+TCGA-DU-8161,Non-codel,IDHwt,Unmethylated,23.7,,
+TCGA-CS-6188,Non-codel,IDHwt,Unmethylated,23.8,,
+TCGA-06-0216,Non-codel,IDHwt,,24.1,,
+TCGA-27-1833,Non-codel,IDHwt,Unmethylated,24.2,,
+TCGA-27-2518,Non-codel,IDHwt,Unmethylated,24.7,,
+TCGA-06-0132,Non-codel,IDHwt,,25.3,,
+TCGA-19-1390,Non-codel,IDHwt,Methylated,25.4,,
+TCGA-FG-5963,Non-codel,IDHwt,Unmethylated,25.5,,
+TCGA-12-0688,Non-codel,IDHwt,,26.6,,
+TCGA-06-0137,Non-codel,IDHwt,Unmethylated,26.7,,
+TCGA-DU-A76L,Non-codel,IDHwt,Methylated,26.7,,
+TCGA-06-0188,Non-codel,IDHwt,,28.5,,
+TCGA-14-0871,Non-codel,IDHwt,Unmethylated,28.9,,
+TCGA-16-1045,Non-codel,IDHwt,Methylated,29,,
+TCGA-27-1836,Non-codel,IDHwt,Methylated,30,,
+TCGA-VM-A8C9,Non-codel,IDHwt,Unmethylated,30.1,,
+TCGA-HT-8019,Non-codel,IDHwt,Unmethylated,33,,
+TCGA-12-0619,Non-codel,IDHwt,,34.9,,
+TCGA-12-3652,Non-codel,IDHwt,Unmethylated,34.9,,
+TCGA-06-0185,Non-codel,IDHwt,,37,,
+TCGA-HT-7854,Non-codel,IDHwt,Unmethylated,39.5,,
+TCGA-06-0184,Non-codel,IDHwt,,40.3,,
+TCGA-27-1834,Non-codel,IDHwt,Methylated,40.5,,
+TCGA-DU-A7TB,Non-codel,IDHwt,Unmethylated,42.3,,
+TCGA-06-0125,Non-codel,IDHwt,Methylated,47.6,,
+TCGA-TM-A7C3,Non-codel,IDHwt,Methylated,49.4,,
+TCGA-14-1450,Non-codel,IDHwt,Methylated,58.7,,
+TCGA-06-6693,Non-codel,IDHwt,Unmethylated,120.5,,
+TCGA-DU-6404,Non-codel,IDHwt,Unmethylated,133.7,,
+TCGA-16-1048,Non-codel,IDHwt,Unmethylated,,,
+TCGA-28-2501,Non-codel,IDHwt,Methylated,,,
+TCGA-28-2510,Non-codel,IDHwt,Unmethylated,,,
+TCGA-76-6283,Non-codel,IDHwt,Methylated,,,
+TCGA-76-6660,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7YD,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7YJ,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7YL,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7YM,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7YN,Non-codel,IDHwt,Methylated,,,
+TCGA-E1-A7YQ,Non-codel,IDHwt,Unmethylated,,,
+TCGA-E1-A7Z2,Non-codel,IDHwt,Unmethylated,,,
+TCGA-RR-A6KB,Non-codel,IDHwt,Unmethylated,,,
+TCGA-TQ-A7RP,Non-codel,IDHwt,Methylated,,,
