@@ -1,5 +1,5 @@
 *y
-
+*.npy
 *ogfile
 *.bval
 *.bvec
@@ -15,3 +15,5 @@
 *.pb
 *.o2*
 *.e2*
+code/*skullstrip_condensed.txt_1.o24*
+code/*skullstrip_condensed.txt_1.e24*
