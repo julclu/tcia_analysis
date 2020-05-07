@@ -1,0 +1,173 @@
+{
+    "training": [],
+    "validation": [
+        {
+            "image": "nifti_march_2020/images/b4819/t13526/t13526_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4746/t13284/t13284_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4789/t13431/t13431_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4005/t13285/t13285_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4135/t11807/t11807_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4741/t13277/t13277_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4791/t13436/t13436_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4787/t13426/t13426_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4829/t13572/t13572_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4740/t13275/t13275_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4794/t13444/t13444_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4826/t13566/t13566_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4837/t13602/t13602_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4590/t13612/t13612_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4817/t13522/t13522_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4823/t13545/t13545_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4853/t13642/t13642_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4742/t13280/t13280_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b3685/t13633/t13633_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b3531/t13418/t13418_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4814/t13510/t13510_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4797/t13460/t13460_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4838/t13604/t13604_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4745/t13283/t13283_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4342/t13587/t13587_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4747/t13286/t13286_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4744/t13282/t13282_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4807/t13496/t13496_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4849/t13631/t13631_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4739/t13274/t13274_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4820/t13532/t13532_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4830/t13574/t13574_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4809/t13498/t13498_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4799/t13470/t13470_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4835/t13591/t13591_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b3971/t13559/t13559_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4789/t13430/t13430_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4800/t13478/t13478_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4841/t13614/t13614_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4787/t13425/t13425_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4851/t13638/t13638_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4812/t13502/t13502_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4832/t13581/t13581_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4786/t13423/t13423_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4828/t13570/t13570_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4839/t13606/t13606_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b2978/t13432/t13432_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4791/t13437/t13437_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4793/t13442/t13442_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4798/t13464/t13464_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4795/t13446/t13446_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4738/t13272/t13272_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4310/t13562/t13562_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4737/t13271/t13271_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4790/t13434/t13434_fla.nii.gz"
+        },
+        {
+            "image": "nifti_march_2020/images/b4836/t13600/t13600_fla.nii.gz"
+        }
+    ]
+}

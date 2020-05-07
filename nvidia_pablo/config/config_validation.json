@@ -1,0 +1,140 @@
+{
+  "use_scanning_window": true,
+  "batch_size": 1,
+  "inferer":
+  {
+      "name": "TFScanWindowInferer",
+      "args": {
+        "roi_size": [224, 224, 128],
+        "batch_size": 1
+      }
+  },
+  "model_loader": {
+    "args": {
+      "model_file_path": "{MMAR_CKPT_DIR}/model.fzn.pb"
+    },
+    "name": "FrozenGraphModelLoader"
+  },
+  "multi_gpu": false,
+  "pre_transforms":
+  [
+      {
+        "name": "LoadNifti",
+        "args": {
+          "fields": [
+            "image"
+          ]
+        }
+      },
+      {
+        "name": "ConvertToChannelsFirst",
+        "args": {
+          "fields": [
+            "image"
+          ]
+        }
+      },
+      {
+        "name": "NormalizeNonzeroIntensities",
+        "args": {
+          "fields": "image"
+        }
+      }
+  ],
+  "post_transforms": [
+    {
+      "name": "ThresholdValues",
+      "args": {
+        "fields": "model",
+        "threshold": 0.5
+      }
+    },
+    {
+      "name": "SplitAcrossChannels",
+      "args": {
+        "field": "model",
+        "channel_names": [
+          "background_unused",
+          "TC"
+        ]
+      }
+    },
+    {
+      "name": "CopyProperties",
+      "args": {
+        "fields": [
+          "model"
+        ],
+        "from_field": "image",
+        "properties": [
+          "affine"
+        ]
+      }
+    },
+    {
+      "name": "RestoreOriginalShape",
+      "args": {
+        "field": "model",
+        "src_field": "image",
+        "is_label": true
+      }
+    }
+  ],
+  "label_transforms": [
+    {
+      "name": "LoadNifti",
+      "args": {
+        "fields": "label"
+      }
+    },
+    {
+      "name": "ConvertToChannelsFirst",
+      "args": {
+        "fields": [
+          "label"
+        ]
+      }
+    },
+    {
+      "name": "ConvertToMultiChannelBasedOnBratsClasses",
+      "args": {
+        "fields": [
+          "label"
+        ],
+        "class_names": [
+          "TC"
+        ]
+      }
+    },
+    {
+      "name": "SplitAcrossChannels",
+      "args": {
+        "field": "label",
+        "channel_names": [
+          "TC_label"
+        ]
+      }
+    }
+  ],
+  "val_metrics": [
+    {
+      "name": "ComputeAverageDice",
+      "args": {
+        "name": "mean_dice_TC",
+        "field": "TC",
+        "label_field": "TC_label",
+        "report_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      }
+    }
+  ],
+  "writers": [
+    {
+      "args": {
+        "field": "TC",
+        "dtype": "uint8",
+        "write_path": "{MMAR_EVAL_OUTPUT_PATH}"
+      },
+      "name": "WriteNifti"
+    }
+  ]
+}

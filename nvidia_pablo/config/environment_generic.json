@@ -1,0 +1,7 @@
+{
+    "DATA_ROOT": "REPLACE_DATA_ROOT",
+    "DATASET_JSON": "REPLACE_CONFIG_DATALIST",
+    "MMAR_CKPT_DIR": "models",
+    "MMAR_EVAL_OUTPUT_PATH": "eval",
+    "PROCESSING_TASK": "segmentation"
+}
