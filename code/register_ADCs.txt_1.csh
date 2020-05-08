@@ -1,7 +1,7 @@
 #!/bin/csh
 
 #$ -sync yes
-#$ -N register_ADC.txt_1
+#$ -N register_ADCs.txt_1
 #$ -l arch=lx24-amd64
 #$ -q brain.q@@rrc_brain_cluster
 #$ -t 1-314
@@ -9,8 +9,8 @@
 
 
 if ($SGE_TASK_ID == 1) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-14019 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-14019 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/8-AX_T1_pre_gd-14019a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/8-AX_T1_pre_gd-14019a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5853/08-23-1995-MRI_BRAIN_WWO_CONTRAST-78436/TCGA-DU-5853_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 2) then
@@ -84,13 +84,13 @@ if ($SGE_TASK_ID == 15) then
 endif
 
 if ($SGE_TASK_ID == 16) then
-	echo "$HOST running: BRAINSFit --fixedVolume 7-AX_T1_pre_gd-93841 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 7-AX_T1_pre_gd-93841 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/7-AX_T1_pre_gd-93841a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/7-AX_T1_pre_gd-93841a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7015/06-18-1989-MRI_BRAIN_WWO_CONTRAS-16160/TCGA-DU-7015_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 17) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-39637 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-39637 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/8-AX_T1_pre_gd-39637a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/8-AX_T1_pre_gd-39637a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8164/01-11-1997-MRI_BRAIN_WWO_CONTRAST-98366/TCGA-DU-8164_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 18) then
@@ -194,13 +194,13 @@ if ($SGE_TASK_ID == 37) then
 endif
 
 if ($SGE_TASK_ID == 38) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-63205 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-63205 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/9-AX_T1_pre_gd-63205a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/9-AX_T1_pre_gd-63205a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8163/11-19-1996-MRI_BRAIN_WWO_CONTRAST-27038/TCGA-DU-8163_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 39) then
-	echo "$HOST running: BRAINSFit --fixedVolume 10-AX_T1_pre_gd-00693 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 10-AX_T1_pre_gd-00693 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/10-AX_T1_pre_gd-00693a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/10-AX_T1_pre_gd-00693a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7018/12-20-1991-MRI_BRAIN_WWO_CONTRAST-98852/TCGA-DU-7018_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 40) then
@@ -224,13 +224,13 @@ if ($SGE_TASK_ID == 43) then
 endif
 
 if ($SGE_TASK_ID == 44) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-53768 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-53768 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/8-AX_T1_pre_gd-53768a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/8-AX_T1_pre_gd-53768a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7302/12-03-1991-MRI_BRAIN_WWO_CONTRAST-41440/TCGA-DU-7302_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 45) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-28619 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-28619 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/9-AX_T1_pre_gd-28619a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/9-AX_T1_pre_gd-28619a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7306/05-12-1993-MRI_BRAIN_WWO_CONTRAST-11323/TCGA-DU-7306_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 46) then
@@ -284,13 +284,13 @@ if ($SGE_TASK_ID == 55) then
 endif
 
 if ($SGE_TASK_ID == 56) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-75838 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-75838 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/8-AX_T1_pre_gd-75838a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/8-AX_T1_pre_gd-75838a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5871/12-06-1994-MRI_BRAIN_WWO_CONTRAST-77531/TCGA-DU-5871_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 57) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-59554 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-59554 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/8-AX_T1_pre_gd-59554a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/8-AX_T1_pre_gd-59554a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6407/12-22-1992-MRI_BRAIN_WWO_CONTRAST-78886/TCGA-DU-6407_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 58) then
@@ -374,18 +374,18 @@ if ($SGE_TASK_ID == 73) then
 endif
 
 if ($SGE_TASK_ID == 74) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-36450 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-36450 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/8-AX_T1_pre_gd-36450a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/8-AX_T1_pre_gd-36450a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8167/04-02-1997-MRI_BRAIN_WWO_CONTRAST-29125/TCGA-DU-8167_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 75) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-21019 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-21019 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/9-AX_T1_pre_gd-21019a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/9-AX_T1_pre_gd-21019a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5849/04-05-1995-MRI_BRAIN_WWO_CONTRAST-20866/TCGA-DU-5849_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 76) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-17760 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-17760 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/8-AX_T1_pre_gd-17760a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/8-AX_T1_pre_gd-17760a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-6542/05-08-1996-MRI_BRAIN_WWO_CONTRAST-27308/TCGA-DU-6542_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 77) then
@@ -569,8 +569,8 @@ if ($SGE_TASK_ID == 112) then
 endif
 
 if ($SGE_TASK_ID == 113) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-40072 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-40072 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/8-AX_T1_pre_gd-40072a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/8-AX_T1_pre_gd-40072a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7301/11-12-1991-MRI_BRAIN_WWO_CONTRAST-22050/TCGA-DU-7301_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 114) then
@@ -624,8 +624,8 @@ if ($SGE_TASK_ID == 123) then
 endif
 
 if ($SGE_TASK_ID == 124) then
-	echo "$HOST running: BRAINSFit --fixedVolume 10-AX_T1_pre_gd-82760 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 10-AX_T1_pre_gd-82760 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/10-AX_T1_pre_gd-82760a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/10-AX_T1_pre_gd-82760a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7309/08-31-1996-MRI_BRAIN_WWO_CONTRAST-83234/TCGA-DU-7309_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 125) then
@@ -709,8 +709,8 @@ if ($SGE_TASK_ID == 140) then
 endif
 
 if ($SGE_TASK_ID == 141) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-14297 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-14297 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/8-AX_T1_pre_gd-14297a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/8-AX_T1_pre_gd-14297a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8168/05-03-1997-MRI_BRAIN_WWO_CONTRAST-55138/TCGA-DU-8168_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 142) then
@@ -724,18 +724,18 @@ if ($SGE_TASK_ID == 143) then
 endif
 
 if ($SGE_TASK_ID == 144) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-63463 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-63463 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/8-AX_T1_pre_gd-63463a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/8-AX_T1_pre_gd-63463a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8162/10-29-1996-MRI_BRAIN_WWO_CONTRAST-44912/TCGA-DU-8162_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 145) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-46981 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-46981 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/8-AX_T1_pre_gd-46981a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/8-AX_T1_pre_gd-46981a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7019/09-08-1994-MRI_BRAIN_WWO_CONTRAST-36813/TCGA-DU-7019_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 146) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-68886 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-68886 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/9-AX_T1_pre_gd-68886a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/9-AX_T1_pre_gd-68886a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5874/05-10-1995-MRI_BRAIN_WWO_CONTRAST-73527/TCGA-DU-5874_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 147) then
@@ -749,8 +749,8 @@ if ($SGE_TASK_ID == 148) then
 endif
 
 if ($SGE_TASK_ID == 149) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-69017 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-69017 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/9-AX_T1_pre_gd-69017a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/9-AX_T1_pre_gd-69017a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8165/02-05-1997-MRI_BRAIN_WWO_CONTRAST-94305/TCGA-DU-8165_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 150) then
@@ -804,8 +804,8 @@ if ($SGE_TASK_ID == 159) then
 endif
 
 if ($SGE_TASK_ID == 160) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-54697 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-54697 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/8-AX_T1_pre_gd-54697a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/8-AX_T1_pre_gd-54697a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7304/03-25-1993-MRI_BRAIN_WWO_CONTRAST-46100/TCGA-DU-7304_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 161) then
@@ -829,8 +829,8 @@ if ($SGE_TASK_ID == 164) then
 endif
 
 if ($SGE_TASK_ID == 165) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-61202 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-61202 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/8-AX_T1_pre_gd-61202a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/8-AX_T1_pre_gd-61202a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-5852/07-09-1995-MRI_BRAIN_WWO_CONTRAST-62702/TCGA-DU-5852_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 166) then
@@ -909,8 +909,8 @@ if ($SGE_TASK_ID == 180) then
 endif
 
 if ($SGE_TASK_ID == 181) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-75477 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-75477 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/8-AX_T1_pre_gd-75477a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/8-AX_T1_pre_gd-75477a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7300/08-14-1991-MRI_BRAIN_WWO_CONTRAST-33968/TCGA-DU-7300_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 182) then
@@ -1154,18 +1154,18 @@ if ($SGE_TASK_ID == 229) then
 endif
 
 if ($SGE_TASK_ID == 230) then
-	echo "$HOST running: BRAINSFit --fixedVolume 9-AX_T1_pre_gd-32082 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 9-AX_T1_pre_gd-32082 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/9-AX_T1_pre_gd-32082a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/9-AX_T1_pre_gd-32082a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-8166/03-22-1997-MRI_BRAIN_WWO_CONTRAST-94974/TCGA-DU-8166_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 231) then
-	echo "$HOST running: BRAINSFit --fixedVolume 7-AX_T1_pre_gd-49092 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 7-AX_T1_pre_gd-49092 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/7-AX_T1_pre_gd-49092a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/7-AX_T1_pre_gd-49092a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-A5TP/06-14-1997-MRI_BRAIN_WWO_CONTRAST-14542/TCGA-DU-A5TP_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 232) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-86144 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-86144 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/8-AX_T1_pre_gd-86144a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/8-AX_T1_pre_gd-86144a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-LGG-nifti/TCGA-DU-7299/04-17-1991-MRI_BRAIN_WWO_CONTRAST-84114/TCGA-DU-7299_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 233) then
@@ -1499,8 +1499,8 @@ if ($SGE_TASK_ID == 298) then
 endif
 
 if ($SGE_TASK_ID == 299) then
-	echo "$HOST running: BRAINSFit --fixedVolume 8-AX_T1_pre_gd-09207 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adca.nii.gz --transformType Rigid"
-	BRAINSFit --fixedVolume 8-AX_T1_pre_gd-09207 --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adca.nii.gz --transformType Rigid
+	echo "$HOST running: BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/8-AX_T1_pre_gd-09207a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adca.nii.gz --transformType Rigid"
+	BRAINSFit --fixedVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/8-AX_T1_pre_gd-09207a.nii.gz --movingVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adc.nii.gz --outputVolume /working/lupolab/julia/tcia_analysis/datasets/TCGA-GBM-nifti/TCGA-06-1806/02-27-2008-MRI_BRAIN_WWO_CONTRAST-78379/TCGA-06-1806_adca.nii.gz --transformType Rigid
 endif
 
 if ($SGE_TASK_ID == 300) then
