@@ -11,7 +11,7 @@
   },
   "model_loader": {
     "args": {
-      "model_file_path": "{MMAR_CKPT_DIR}/model.t1c.trt.pb"
+      "model_file_path": "{MMAR_CKPT_DIR}/model.fzn.pb"
     },
     "name": "FrozenGraphModelLoader"
   },

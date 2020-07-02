@@ -2,6 +2,6 @@
     "DATA_ROOT": "/working/lupolab/julia/tcia_analysis/datasets",
     "DATASET_JSON": "/working/lupolab/julia/tcia_analysis/nvidia/config/config_datalist_flair.json",
     "MMAR_CKPT_DIR": "models",
-    "MMAR_EVAL_OUTPUT_PATH": "eval",
+    "MMAR_EVAL_OUTPUT_PATH": "eval_fla",
     "PROCESSING_TASK": "segmentation"
 }
